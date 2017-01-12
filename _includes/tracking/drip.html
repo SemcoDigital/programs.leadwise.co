@@ -1,0 +1,19 @@
+<!-- Drip -->
+<script type="text/javascript">
+if(location.hostname == "localhost"){
+  drip_account_id = '6287664';
+} else {
+  drip_account_id = '5317382';
+}
+  var _dcq = _dcq || [];
+  var _dcs = _dcs || {};
+  _dcs.account = drip_account_id;
+
+  (function() {
+    var dc = document.createElement('script');
+    dc.type = 'text/javascript'; dc.async = true;
+    dc.src = '//tag.getdrip.com/'+drip_account_id+'.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(dc, s);
+  })();
+</script>

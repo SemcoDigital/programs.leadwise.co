@@ -1,0 +1,16 @@
+// Colors
+$lw-blue: #30A7E9;
+$lw-black: #000000;
+$lw-cta: #FFCC00;
+$lw-dark-bg: #4B4B4B;
+$lw-light-bg: #EAEAEA;
+
+$font-default: #95989A;
+$font-white: #FFFFFF;
+$font-lw-dark-bg: #D0D0D0;
+$font-lw-light-bg: #95989A;
+
+// Responsive
+$mobile: new-breakpoint(max-width 420px);
+$tablet: new-breakpoint(max-width 768px);
+$desktop: new-breakpoint(min-width 769px);

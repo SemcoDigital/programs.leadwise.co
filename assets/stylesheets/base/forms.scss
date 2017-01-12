@@ -1,0 +1,38 @@
+input,
+textarea {
+  border: 1px solid $font-lw-light-bg;
+  font-size: 1em;
+  margin: 0;
+  outline: 0;
+  padding: 1em;
+  width: 100%;
+  &:focus {
+    border: 1px solid $lw-blue;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background: $lw-cta;
+  border: 0;
+  color: $lw-black;
+  display: inline-block;
+  font-size: 1.4em;
+  font-family: 'ostrich_sansmedium';
+  letter-spacing: 0.1em;
+  padding: .65em 1em;
+  text-decoration: none;
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+.btn{
+  @extend button;
+  background: $lw-blue;
+  color: $font-white;
+}

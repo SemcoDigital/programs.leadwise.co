@@ -1,0 +1,3 @@
+exclude: ['Gemfile', 'Gemfile.lock', 'README.md', 'Procfile', 'CNAME', 'templates']
+
+permalink: /:categories/program/:title.html

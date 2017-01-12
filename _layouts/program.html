@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div>
+   <section>
+       <h3> {{ page.title }} </h3>
+       <p> {{ page.short_description }}</p>
+   </section>
+
+   <section>
+       {% for topic in page.topics %}
+       <p> <i class="fa fa-check-square-o fa-2x"> {{ topic }}</i>
+       {% endfor %}
+   </section>
+
+   <section>
+       <strong> Description: </strong>
+       <p> {{ page.description }} </p>
+   </section>
+</div>

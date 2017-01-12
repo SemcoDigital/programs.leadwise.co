@@ -1,0 +1,19 @@
+{% include tracking/drip.html %}
+{% include tracking/google_analytics.html %}
+{% include tracking/adroll.html %}
+{% include tracking/facebook.html %}
+{% include tracking/pushcrew.html %}
+{% include tracking/sitescout.html %}
+{% include tracking/linkedin.html %}
+{% if page.crazyegg %}
+  {% include tracking/crazyegg.html %}
+{% endif %}
+{% if page.inspeclet %}
+  {% include tracking/inspeclet.html %}
+{% endif %}
+{% if page.chatlio %}
+  {% include tracking/chatlio.html %}
+{% endif %}
+{% if page.popupdomination %}
+  {% include tracking/popupdomination.html %}
+{% endif %}

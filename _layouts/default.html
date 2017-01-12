@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% include meta_tags.html %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/stylesheets/style.css">
+  <link rel="stylesheet" href="/assets/stylesheets/products.css">
+</head>
+
+<body>
+  {{ content }}
+  <!--Footer-->
+  {% include footer.html %}
+  <div id="openModal" class="modalDialog">
+      <div>
+          <a title="Close" class="close">X</a>
+          <div class="modal-body">
+              <div id="privacy" class="information">
+                  {% include privacy-policy-text.html %}
+              </div>
+
+              <div id="cookie" class="information">
+                  {% include cookie-statement-text.html %}
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="/assets/javascripts/action.js"></script>
+
+{% include tracking.html %}
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+@font-face {
+	font-family: 'ostrich_sansblack';
+	src: url('../fonts/ostrichsans/ostrichsans-black/ostrichsans-black-webfont.eot');
+	src: url('../fonts/ostrichsans/ostrichsans-black/ostrichsans-black-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ostrichsans/ostrichsans-black/ostrichsans-black-webfont.woff2') format('woff2'), url('../fonts/ostrichsans/ostrichsans-black/ostrichsans-black-webfont.woff') format('woff'), url('../fonts/ostrichsans/ostrichsans-black/ostrichsans-black-webfont.ttf') format('truetype'), url('../fonts/ostrichsans/ostrichsans-black/ostrichsans-black-webfont.svg#ostrich_sansblack') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ostrich_sansmedium';
+	src: url('../fonts/ostrichsans/ostrichsans-medium/ostrichsans-medium-webfont.eot');
+	src: url('../fonts/ostrichsans/ostrichsans-medium/ostrichsans-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/ostrichsans/ostrichsans-medium/ostrichsans-medium-webfont.woff2') format('woff2'), url('../fonts/ostrichsans/ostrichsans-medium/ostrichsans-medium-webfont.woff') format('woff'), url('../fonts/ostrichsans/ostrichsans-medium/ostrichsans-medium-webfont.ttf') format('truetype'), url('../fonts/ostrichsans/ostrichsans-medium/ostrichsans-medium-webfont.svg#ostrich_sansmedium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'open_sans_light';
+	src: url('../fonts/opensans/light/opensans-light-webfont.eot');
+	src: url('../fonts/opensans/light/opensans-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/light/opensans-light-webfont.woff') format('woff'), url('../fonts/opensans/light/opensans-light-webfont.ttf') format('truetype'), url('../fonts/opensans/light/opensans-light-webfont.svg#open_sanslight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'open_sans_bold';
+	src: url('../fonts/opensans/bold/OpenSans-Bold-webfont.eot');
+	src: url('../fonts/opensans/bold/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/bold/OpenSans-Bold-webfont.woff') format('woff'), url('../fonts/opensans/bold/OpenSans-Bold-webfont.ttf') format('truetype'), url('../fonts/opensans/bold/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'open_sans_italic';
+	src: url('../fonts/opensans/lightitalic/OpenSans-LightItalic-webfont.eot');
+	src: url('../fonts/opensans/lightitalic/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/lightitalic/OpenSans-LightItalic-webfont.woff') format('woff'), url('../fonts/opensans/lightitalic/OpenSans-LightItalic-webfont.ttf') format('truetype'), url('../fonts/opensans/lightitalic/OpenSans-LightItalic-webfont.svg#open_sanslight_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+p {
+	a {
+		color: $lw-blue;
+		text-decoration: none;
+	}
+}
+
+h1 {
+	color: $lw-blue;
+	font-family: 'ostrich_sansblack';
+	font-size: 4em;
+	margin: 1em 0;
+}
+
+h2,
+h3,
+h4 {
+	font-family: 'ostrich_sansmedium';
+}
+
+h2 {
+	font-size: 2em;
+	margin: .2em 0;
+	@include media($tablet) {
+		font-size: 1.35em;
+	}
+}
+
+h3 {
+	font-size: 2.5em;
+	margin: 1em 0;
+}
+
+h4 {
+	font-size: 2em;
+	margin: .5em 0;
+}
+
+h5 {
+	font-family: 'open_sans_light';
+	margin: 0;
+	text-transform: uppercase;
+}
+
+p {
+	font-family: 'open_sans_light';
+}

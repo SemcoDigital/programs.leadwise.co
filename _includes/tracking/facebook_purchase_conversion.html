@@ -1,0 +1,23 @@
+<script type="text/javascript">
+/* <![CDATA[ */
+if(location.hostname != "localhost"){
+  var urlParams;
+  (window.onpopstate = function () {
+      var match,
+          pl     = /\+/g,  // Regex for replacing addition symbol with a space
+          search = /([^&=]+)=?([^&]*)/g,
+          decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+          query  = window.location.search.substring(1);
+
+      urlParams = {};
+      while (match = search.exec(query))
+         urlParams[decode(match[1])] = decode(match[2]);
+  })();
+  if(urlParams.hasOwnProperty('value')) {
+    fbq('track', 'Purchase', {value: parseInt(urlParams.value)/100, currency:'USD'});
+  } else {
+    fbq('track', 'Purchase');
+  }
+}
+/* ]]> */
+</script>
