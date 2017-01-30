@@ -235,13 +235,21 @@ header .menu {
     margin: 0 0 60px 0;
     padding-right: 50px;
     box-sizing: border-box; }
+    @media screen and (max-width: 768px) {
+      .sample-list .wrap-content > div {
+        width: 100%; } }
   .sample-list i {
-    color: #30A7E9; }
+    color: #30A7E9;
+    font-size: 40px;
+    margin-top: 5px;
+    float: left; }
   .sample-list h3 {
     color: #30A7E9;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 50px; }
   .sample-list p {
-    font-family: open_sans_bold;
-    margin: 0; }
+    margin: 0 0 0 50px;
+    font-size: 18px;
+    line-height: 29px; }
 
 /*# sourceMappingURL=style.css.map */
