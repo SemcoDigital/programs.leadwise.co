@@ -201,8 +201,8 @@ Internal menu responsive
     @media screen and (max-width: 768px) {
       .main-banner h1 {
         font-size: 40px;
-        line-height: 42px;
-        margin: 140px 0 -5px 0;
+        line-height: 40px;
+        margin: 130px 0 -5px 0;
         background: #fff;
         padding: 10px; } }
   .main-banner h2 {
@@ -212,8 +212,8 @@ Internal menu responsive
     @media screen and (max-width: 768px) {
       .main-banner h2 {
         font-size: 20px;
-        line-height: 24px;
-        padding: 10px;
+        line-height: 23px;
+        padding: 0 10px 10px 10px;
         background: #fff; } }
 
 /*# sourceMappingURL=style.css.map */
