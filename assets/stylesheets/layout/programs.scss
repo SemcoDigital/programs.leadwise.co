@@ -8,16 +8,17 @@
   width: 100%;
   padding-bottom: 140px;
 
-  @include media($mobile) {
-    padding-bottom: 50px;
+  @include media($tablet) {
+    padding-bottom: 40px;
   }
 
   h1 {
     margin: 65px 0 25px 0;
 
-    @include media($mobile) {
+    @include media($tablet) {
       font-size: 40px;
-      margin: 135px 0 -5px 0;
+      line-height: 42px;
+      margin: 140px 0 -5px 0;
       background: #fff;
     }
   }
@@ -27,7 +28,9 @@
     color: $font-lw-light-bg;
     letter-spacing: .02em;
 
-    @include media($mobile) {
+    @include media($tablet) {
+      font-size: 20px;
+      line-height: 24px;
       padding: 10px;
       background: #fff;
     }

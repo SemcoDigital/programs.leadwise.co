@@ -10,7 +10,7 @@ header {
     margin: 35px 0 0 0;
     float: left;
 
-    @include media($mobile) {
+    @include media($tablet) {
       width: 120px;
       height: auto;
       float: none;

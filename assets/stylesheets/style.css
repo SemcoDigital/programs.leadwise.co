@@ -113,7 +113,7 @@ header .logo {
   height: 6em;
   margin: 35px 0 0 0;
   float: left; }
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 768px) {
     header .logo {
       width: 120px;
       height: auto;
@@ -196,22 +196,25 @@ Internal menu responsive
   display: table;
   width: 100%;
   padding-bottom: 140px; }
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 768px) {
     .main-banner {
-      padding-bottom: 50px; } }
+      padding-bottom: 40px; } }
   .main-banner h1 {
     margin: 65px 0 25px 0; }
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 768px) {
       .main-banner h1 {
         font-size: 40px;
-        margin: 135px 0 -5px 0;
+        line-height: 42px;
+        margin: 140px 0 -5px 0;
         background: #fff; } }
   .main-banner h2 {
     font-weight: bold;
     color: #95989A;
     letter-spacing: .02em; }
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 768px) {
       .main-banner h2 {
+        font-size: 20px;
+        line-height: 24px;
         padding: 10px;
         background: #fff; } }
 
