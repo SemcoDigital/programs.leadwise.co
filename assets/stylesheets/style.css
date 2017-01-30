@@ -220,4 +220,28 @@ header .menu {
         padding: 0 10px 10px 10px;
         background: #fff; } }
 
+.sample-list {
+  text-align: center;
+  padding-top: 20px; }
+  .sample-list::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .sample-list .wrap-content > div {
+    width: 45%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    margin: 0 0 60px 0;
+    padding-right: 50px;
+    box-sizing: border-box; }
+  .sample-list i {
+    color: #30A7E9; }
+  .sample-list h3 {
+    color: #30A7E9;
+    text-align: center; }
+  .sample-list p {
+    font-family: open_sans_bold;
+    margin: 0; }
+
 /*# sourceMappingURL=style.css.map */

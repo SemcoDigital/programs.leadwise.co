@@ -42,3 +42,40 @@
     }
   }
 }
+
+
+// Sample list
+
+.sample-list {
+  @include clearfix;
+  text-align: center;
+  padding-top: 20px;
+
+  .wrap-content > div {
+    width: 45%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    margin: 0 0 60px 0;
+    padding-right: 50px;
+    box-sizing: border-box;
+
+    @include media($tablet) {
+
+    }
+  }
+
+  i {
+    color: $lw-blue;
+  }
+
+  h3 {
+    color: $lw-blue;
+    text-align: center;
+  }
+
+  p {
+    font-family: open_sans_bold;
+    margin: 0;
+  }
+}
