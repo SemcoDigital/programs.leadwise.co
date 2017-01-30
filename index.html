@@ -3,31 +3,32 @@ layout: default
 title: LeadWise
 ---
 
-<section class="main-banner">
+<!--Header-->
+<input type="checkbox" id="sidebartoggle" name="" value="">
+<header>
   <div class="wrap-content">
-
     <img src="assets/images/logo-leadwise-programs.svg" alt="LeadWise Programs" class="logo">
+    <label for="sidebartoggle" class="sidebartogle-button">
+      <img class="btn-menu" src="assets/images/icon-menu.svg" alt="menu">
+    </label>
+    <ul class="menu" id="main-menu">
+      <li><a class="scroll-link" data-soffset="0" href="#about">Key benefits</a></li>
+      <li><a class="scroll-link" data-soffset="0" href="#howitworks">How it Works</a></li>
+      <li><a class="scroll-link" data-soffset="0" href="#features">Our programs</a></li>
+      <li><a class="scroll-link btn-cta" data-soffset="0" href="#pricing">Start Now</a></li>
+    </ul>
+  </div>
+</header>
+
+<!--Banner-->
+<div class="main-banner">
+  <div class="wrap-content">
 
     <h1>Practical tools to change how we work</h1>
-    <h2>Our online courses, tools and in-person workshops change how organizations work by helping leaders to create positive cultures that attract and retain their best people.</h2>
+
+    <h2>
+      Our online courses, tools and in-person workshops change how organizations work by helping leaders to create positive cultures that attract and retain their best people.
+    </h2>
 
   </div>
-</section> <!-- /main-banner -->
-
-<!-- community -->
-<!--<div class="about-lw-co">
-  <div class="wrap-content">
-    <h3> Leadwise Programs</h3>
-
-    {% for program in site.posts %}
-    <div class="about-col-2">
-      <h4><a href="{{ program.url }}">{{ program.title }}</a></h4>
-      <strong> {{ program.price }} </strong>
-      <div>
-      {{ program.short_description}}
-      </div>
-    </div>
-    {% endfor %}
-
-  </div>
-</div>-->
+</div>

@@ -1,0 +1,35 @@
+// Main banner
+
+.main-banner {
+  text-align: center;
+  background: #fff url("../images/banner-bg.jpg");
+  background-size: cover;
+  display: table;
+  width: 100%;
+  padding-bottom: 140px;
+
+  @include media($mobile) {
+    padding-bottom: 50px;
+  }
+
+  h1 {
+    margin: 65px 0 25px 0;
+
+    @include media($mobile) {
+      font-size: 40px;
+      margin: 135px 0 -5px 0;
+      background: #fff;
+    }
+  }
+
+  h2 {
+    font-weight: bold;
+    color: $font-lw-light-bg;
+    letter-spacing: .02em;
+
+    @include media($mobile) {
+      padding: 10px;
+      background: #fff;
+    }
+  }
+}

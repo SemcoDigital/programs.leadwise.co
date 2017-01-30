@@ -1,43 +1,106 @@
-// Main banner
+header {
 
-.main-banner {
-  text-align: center;
-  background: #fff url("../images/banner-bg.jpg");
-  background-size: cover;
-  display: table;
-  width: 100%;
-  padding-bottom: 140px;
-
-  @include media($mobile) {
-    padding-bottom: 140px;
+  @include media($tablet) {
+    position: absolute;
+    width: 100%;
   }
 
   .logo {
-    width: 200px;
-    margin: 70px 0 0 0;
+    height: 6em;
+    margin: 35px 0 0 0;
+    float: left;
 
     @include media($mobile) {
-      width: 140px;
-      margin: 30px 0 0 0;
+      width: 120px;
+      height: auto;
+      float: none;
     }
   }
 
-  h1 {
-    margin: 65px 0 15px 0;
+  .menu {
+    display: table;
+    float: right;
+    font-family: 'open_sans_light';
+    margin: 4em 0;
+    padding: 0;
+    @include media($tablet) {
+      display: none;
+    }
+    li{
+      display: inline-block;
+      list-style: none;
+      padding: 0 1.2em;
+      a{
+        color: $font-default;
+        text-decoration: none;
 
-    @include media($mobile) {
-      font-size: 40px;
-      margin-top: 25px;
+        &:hover {
+          opacity: .8;
+        }
+      }
+      .btn-cta{
+        background: $lw-blue;
+        color: $font-white;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 20px;
+        font-family: open_sans_bold;
+        text-transform: uppercase;
+        display: inline-block;
+        font-size: 12px;
+      }
     }
   }
+}
 
-  h2 {
-    font-weight: bold;
-    color: $font-lw-light-bg;
-    letter-spacing: .02em;
-
-    @include media($mobile) {
-      margin-bottom: 20px;
+/*
+Internal menu responsive
+*/
+#sidebartoggle{
+  display: none;
+  &:checked + header{
+    .menu{
+      -webkit-box-shadow: -2px 0px 15px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: -2px 0px 15px 0px rgba(0,0,0,0.75);
+      box-shadow: -2px 0px 15px 0px rgba(0,0,0,0.75);
+      display: block;
+      background: $font-white;
+      height: 100vh;
+      margin: 0;
+      padding: 1em;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 180px;
+      z-index: 2;
+      li{
+        display: block;
+        padding: 1em;
+      }
+      .btn-cta{
+        color: $font-white;
+        &:hover{
+          color: $font-white;
+        }
+      }
+      a{
+        color: $font-default;
+        display: block;
+        &:hover{
+          color: $lw-blue;
+        }
+      }
     }
+  }
+}
+.sidebartogle-button{
+  display: none;
+  @include media($tablet) {
+    display: table;
+    float: right;
+  }
+  .btn-menu{
+    height: 3em;
+    margin: 2.5em 0;
   }
 }
