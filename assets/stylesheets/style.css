@@ -222,11 +222,16 @@ header .menu {
 
 .sample-list {
   text-align: center;
+  background: #30A7E9;
   padding-top: 20px; }
   .sample-list::after {
     clear: both;
     content: "";
     display: block; }
+  .sample-list h3 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px; }
   .sample-list .wrap-content > div {
     width: 45%;
     display: inline-block;
@@ -237,19 +242,47 @@ header .menu {
     box-sizing: border-box; }
     @media screen and (max-width: 768px) {
       .sample-list .wrap-content > div {
-        width: 100%; } }
+        width: 100%;
+        padding-right: 0; } }
   .sample-list i {
-    color: #30A7E9;
+    color: #fff;
     font-size: 40px;
-    margin-top: 5px;
+    margin-top: 4px;
     float: left; }
-  .sample-list h3 {
+  .sample-list p {
+    margin: 0 0 0 50px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff; }
+
+.how-it-works {
+  text-align: center;
+  padding-top: 20px; }
+  .how-it-works::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .how-it-works h3 {
     color: #30A7E9;
     text-align: center;
     margin-bottom: 50px; }
-  .sample-list p {
-    margin: 0 0 0 50px;
-    font-size: 18px;
-    line-height: 29px; }
+  .how-it-works .wrap-content > div {
+    width: 45%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    margin: 0 0 60px 0;
+    padding-right: 50px;
+    box-sizing: border-box; }
+    @media screen and (max-width: 768px) {
+      .how-it-works .wrap-content > div {
+        width: 100%;
+        padding-right: 0; } }
+  .how-it-works h4 {
+    font-size: 22px; }
+  .how-it-works p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 26px; }
 
 /*# sourceMappingURL=style.css.map */

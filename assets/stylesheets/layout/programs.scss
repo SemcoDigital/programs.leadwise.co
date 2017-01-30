@@ -49,7 +49,14 @@
 .sample-list {
   @include clearfix;
   text-align: center;
+  background: $lw-blue;
   padding-top: 20px;
+
+  h3 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+  }
 
   .wrap-content > div {
     width: 45%;
@@ -62,15 +69,32 @@
 
     @include media($tablet) {
       width: 100%;
+      padding-right: 0;
     }
   }
 
   i {
-    color: $lw-blue;
+    color: #fff;
     font-size: 40px;
-    margin-top: 5px;
+    margin-top: 4px;
     float: left;
   }
+
+  p {
+    margin: 0 0 0 50px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+  }
+}
+
+
+// How It Works
+
+.how-it-works {
+  @include clearfix;
+  text-align: center;
+  padding-top: 20px;
 
   h3 {
     color: $lw-blue;
@@ -78,9 +102,28 @@
     margin-bottom: 50px;
   }
 
+  .wrap-content > div {
+    width: 45%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    margin: 0 0 60px 0;
+    padding-right: 50px;
+    box-sizing: border-box;
+
+    @include media($tablet) {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
   p {
-    margin: 0 0 0 50px;
-    font-size: 18px;
-    line-height: 29px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 26px;
   }
 }
