@@ -130,7 +130,10 @@ header .menu {
   header .menu li {
     display: inline-block;
     list-style: none;
-    padding: 0 1.2em; }
+    margin-left: 35px; }
+    @media screen and (max-width: 768px) {
+      header .menu li {
+        margin-left: 0; } }
     header .menu li a {
       color: #95989A;
       text-decoration: none; }
@@ -139,11 +142,11 @@ header .menu {
     header .menu li .btn-cta {
       background: #30A7E9;
       color: #FFFFFF;
-      padding: .65em 1em; }
+      line-height: 50px;
+      height: 50px;
+      display: inline-block;
+      padding: 0 25px; }
 
-/*
-Internal menu responsive
-*/
 #sidebartoggle {
   display: none; }
   #sidebartoggle:checked + header .menu {
@@ -162,9 +165,10 @@ Internal menu responsive
     z-index: 2; }
     #sidebartoggle:checked + header .menu li {
       display: block;
-      padding: 1em; }
+      margin-bottom: 20px; }
     #sidebartoggle:checked + header .menu .btn-cta {
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      text-align: center; }
       #sidebartoggle:checked + header .menu .btn-cta:hover {
         color: #FFFFFF; }
     #sidebartoggle:checked + header .menu a {

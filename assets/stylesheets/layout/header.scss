@@ -23,14 +23,21 @@ header {
     font-family: 'open_sans_light';
     margin: 4em 0;
     padding: 0;
+
     @include media($tablet) {
       display: none;
     }
-    li{
+
+    li {
       display: inline-block;
       list-style: none;
-      padding: 0 1.2em;
-      a{
+      margin-left: 35px;
+
+      @include media($tablet) {
+        margin-left: 0;
+      }
+
+      a {
         color: $font-default;
         text-decoration: none;
 
@@ -38,21 +45,27 @@ header {
           opacity: .8;
         }
       }
-      .btn-cta{
+
+      .btn-cta {
         background: $lw-blue;
         color: $font-white;
-        padding: .65em 1em;
+        line-height: 50px;
+        height: 50px;
+        display: inline-block;
+        padding: 0 25px;
       }
     }
   }
 }
 
-/*
-Internal menu responsive
-*/
-#sidebartoggle{
+
+// Internal responsive
+
+#sidebartoggle {
   display: none;
+
   &:checked + header{
+
     .menu{
       -webkit-box-shadow: -2px 0px 15px 0px rgba(0,0,0,0.75);
       -moz-box-shadow: -2px 0px 15px 0px rgba(0,0,0,0.75);
@@ -67,33 +80,42 @@ Internal menu responsive
       top: 0;
       width: 180px;
       z-index: 2;
-      li{
+
+      li {
         display: block;
-        padding: 1em;
+        margin-bottom: 20px;
       }
-      .btn-cta{
+
+      .btn-cta {
         color: $font-white;
-        &:hover{
+        text-align: center;
+
+        &:hover {
           color: $font-white;
         }
       }
-      a{
+
+      a {
         color: $font-default;
         display: block;
-        &:hover{
+
+        &:hover {
           color: $lw-blue;
         }
       }
     }
   }
 }
-.sidebartogle-button{
+
+.sidebartogle-button {
   display: none;
+
   @include media($tablet) {
     display: table;
     float: right;
   }
-  .btn-menu{
+
+  .btn-menu {
     height: 3em;
     margin: 2.5em 0;
   }
