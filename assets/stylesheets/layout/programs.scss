@@ -2,14 +2,19 @@
 
 .main-banner {
   text-align: center;
-  background: #fff url("../images/banner-bg.jpg");
+  background: #fff url("../images/banner-bg.jpg") 0 -100px;
   background-size: cover;
   display: table;
   width: 100%;
-  padding-bottom: 140px;
+  padding-bottom: 200px;
 
   @include media($tablet) {
     padding-bottom: 40px;
+    background-position: 0 0;
+
+    br {
+      display: none;
+    }
   }
 
   h1 {
@@ -20,6 +25,7 @@
       line-height: 42px;
       margin: 140px 0 -5px 0;
       background: #fff;
+      padding: 10px;
     }
   }
 
