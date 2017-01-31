@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  {% include meta_tags.html %}
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="http://www.leadwise.co/assets/stylesheets/leadwise.css">
-	<link rel="stylesheet" href="/assets/stylesheets/style.css">
-	<link rel="stylesheet" href="http://www.leadwise.co/assets/stylesheets/topbar.css">
-</head>
+  <head>
+    {% include meta_tags.html %}
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" href="http://www.leadwise.co/assets/stylesheets/leadwise.css">
+  	<link rel="stylesheet" href="/assets/stylesheets/style.css">
+  	<link rel="stylesheet" href="http://www.leadwise.co/assets/stylesheets/topbar.css">
+  </head>
 
-<body>
-  {{ content }}
-  <!--Footer-->
+  <body>
 
-  <div id="footer"></div>
+    {{ content }}
+
+    <div id="footer"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="/assets/javascripts/action.js"></script>
     <script src="http://www.leadwise.co/assets/javascripts/topbar.js"></script>
     <script src="http://www.leadwise.co/assets/javascripts/footer.js"></script>
-  {% include tracking.html %}
-</body>
+
+    {% include tracking.html %}
+
+  </body>
 
 </html>
