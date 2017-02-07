@@ -133,6 +133,122 @@
 }
 
 
+// Programs list
+
+.programs {
+  text-align: center;
+  padding: 60px 0;
+  background: $lw-light-bg;
+
+  .wrap-content {
+    width: 800px;
+
+    @include media($mobile) {
+      width: 100%;
+    }
+  }
+
+  h3 {
+    color: $lw-blue;
+    margin: 20px 0 0 0;
+
+    @include media($mobile) {
+      font-size: 34px;
+      text-align: left;
+      margin: 0;
+    }
+  }
+}
+
+.programs-list {
+  text-align: left;
+  margin: 50px 0 0 0;
+  padding: 0;
+
+  @include media($mobile) {
+    margin-top: 30px;
+  }
+
+  li {
+    background: #fff;
+    list-style-type: none;
+    margin: 50px 0 0 0;
+    padding: 15px;
+    box-shadow: 0 0 10px #d7d7d7;
+    @include clearfix;
+
+    @include media($mobile) {
+      text-align: center;
+      border-top: 2px solid $lw-light-bg;
+      padding-top: 30px;
+      margin-top: 30px;
+    }
+
+    > img {
+      width: 200px;
+      float: left;
+
+      @include media($mobile) {
+        float: none;
+      }
+    }
+  }
+
+  li:first-child {
+
+    @include media($mobile) {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 0;
+    }
+  }
+
+  .program-infos {
+    margin-left: 240px;
+
+    @include media($mobile) {
+      margin: 20px 0 0 0;
+      text-align: left;
+    }
+
+    .second {
+      margin-left: 20px;
+    }
+  }
+
+  h4 {
+    margin: 0 0 5px 0;
+
+    a {
+      text-decoration: none;
+      color: $lw-blue;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+
+  .post-infos {
+    font-size: 11px;
+    color: $font-lw-light-bg;
+    font-family: 'open_sans_bold';
+    display: block;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 7px 0 0 0;
+    line-height: 22px;
+
+    @include media($mobile) {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+
 // Org Designer Ad
 
 .org-designer-ad {

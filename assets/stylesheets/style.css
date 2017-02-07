@@ -288,6 +288,87 @@ header .menu {
 .how-it-works p {
   margin: 0; }
 
+.programs {
+  text-align: center;
+  padding: 60px 0;
+  background: #EAEAEA; }
+  .programs .wrap-content {
+    width: 800px; }
+    @media screen and (max-width: 420px) {
+      .programs .wrap-content {
+        width: 100%; } }
+  .programs h3 {
+    color: #30A7E9;
+    margin: 20px 0 0 0; }
+    @media screen and (max-width: 420px) {
+      .programs h3 {
+        font-size: 34px;
+        text-align: left;
+        margin: 0; } }
+
+.programs-list {
+  text-align: left;
+  margin: 50px 0 0 0;
+  padding: 0; }
+  @media screen and (max-width: 420px) {
+    .programs-list {
+      margin-top: 30px; } }
+  .programs-list li {
+    background: #fff;
+    list-style-type: none;
+    margin: 50px 0 0 0;
+    padding: 15px;
+    box-shadow: 0 0 10px #d7d7d7; }
+    .programs-list li::after {
+      clear: both;
+      content: "";
+      display: block; }
+    @media screen and (max-width: 420px) {
+      .programs-list li {
+        text-align: center;
+        border-top: 2px solid #EAEAEA;
+        padding-top: 30px;
+        margin-top: 30px; } }
+    .programs-list li > img {
+      width: 200px;
+      float: left; }
+      @media screen and (max-width: 420px) {
+        .programs-list li > img {
+          float: none; } }
+  @media screen and (max-width: 420px) {
+    .programs-list li:first-child {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 0; } }
+  .programs-list .program-infos {
+    margin-left: 240px; }
+    @media screen and (max-width: 420px) {
+      .programs-list .program-infos {
+        margin: 20px 0 0 0;
+        text-align: left; } }
+    .programs-list .program-infos .second {
+      margin-left: 20px; }
+  .programs-list h4 {
+    margin: 0 0 5px 0; }
+    .programs-list h4 a {
+      text-decoration: none;
+      color: #30A7E9; }
+      .programs-list h4 a:hover {
+        opacity: .8; }
+  .programs-list .post-infos {
+    font-size: 11px;
+    color: #95989A;
+    font-family: 'open_sans_bold';
+    display: block;
+    text-transform: uppercase; }
+  .programs-list p {
+    font-size: 14px;
+    margin: 7px 0 0 0;
+    line-height: 22px; }
+    @media screen and (max-width: 420px) {
+      .programs-list p {
+        margin-bottom: 15px; } }
+
 .org-designer-ad {
   color: #FFFFFF;
   background-image: url("../images/org-designer-ad-back.jpg");
