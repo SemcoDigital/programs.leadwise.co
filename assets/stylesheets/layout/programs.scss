@@ -148,5 +148,9 @@
 
   .btn-cta {
     margin-top: 10px;
+
+    &:hover {
+      background: #fff;
+    }
   }
 }

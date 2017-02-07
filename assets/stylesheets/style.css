@@ -298,5 +298,7 @@ header .menu {
     margin: 0 0 20px 0; }
   .org-designer-ad .btn-cta {
     margin-top: 10px; }
+    .org-designer-ad .btn-cta:hover {
+      background: #fff; }
 
 /*# sourceMappingURL=style.css.map */
