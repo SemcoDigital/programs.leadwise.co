@@ -131,3 +131,18 @@
     margin: 0;
   }
 }
+
+
+// Org Designer Ad
+
+.org-designer-ad {
+  color: $font-white;
+  background-image: url("../images/org-designer-ad-back.jpg");
+  background-repeat: no-repeat;
+  padding: 2em;
+  text-align: center;
+
+  h3 {
+    margin: .5em 0;
+  }
+}
