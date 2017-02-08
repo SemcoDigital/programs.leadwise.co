@@ -206,8 +206,9 @@
 
   .program-infos {
     margin-left: 230px;
-    margin-right: 195px;
-    padding: 10px 0;
+    margin-right: 165px;
+    border-right: 1px solid $lw-light-bg;
+    padding: 10px 20px 10px 0;
 
     @include media($mobile) {
       margin: 20px 0 0 0;
@@ -268,7 +269,7 @@
 }
 
 .program-aside {
-  width: 180px;
+  width: 150px;
   position: absolute;
   right: 0;
   top: 15px;
