@@ -175,6 +175,7 @@
     margin: 50px 0 0 0;
     padding: 15px;
     box-shadow: 0 0 10px #d7d7d7;
+    position: relative;
     @include clearfix;
 
     @include media($mobile) {
@@ -204,7 +205,9 @@
   }
 
   .program-infos {
-    margin-left: 240px;
+    margin-left: 230px;
+    margin-right: 195px;
+    padding: 10px 0;
 
     @include media($mobile) {
       margin: 20px 0 0 0;
@@ -245,6 +248,97 @@
     @include media($mobile) {
       margin-bottom: 15px;
     }
+  }
+
+  .program-nav {
+
+    > div {
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+    .program-price {
+      font-family: 'open_sans_bold';
+      font-size: 20px;
+      line-height: 40px;
+      margin-right: 20px;
+      color: #000;
+    }
+  }
+}
+
+.program-aside {
+  width: 180px;
+  position: absolute;
+  right: 0;
+  top: 15px;
+
+  > div {
+    font-size: 12px;
+    margin-top: 10px;
+    color: $font-lw-light-bg;
+
+    strong {
+      font-family: 'open_sans_bold';
+    }
+  }
+}
+
+
+// Buttons
+
+.yellow-but {
+  background: #ffcc00;
+  color: $lw-black;
+}
+
+.blue-but {
+  background: $lw-blue;
+  color: #fff;
+
+  &:active {
+    box-shadow: inset 0 0 6px #2186be;
+    opacity: 1;
+  }
+}
+
+.gray-but {
+  background: rgba($lw-light-bg, .7);
+  color: $lw-blue;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.sample-but {
+  height: 40px;
+  line-height: 41px;
+  padding: 0 15px;
+  border-radius: 2px;
+  text-decoration: none;
+  font-size: 12px;
+  display: inline-block;
+  font-family: 'open_sans_bold';
+  text-align: left !important;
+  margin-right: 4px;
+  margin-top: 15px;
+
+  @include media($mobile) {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 7px;
+  }
+
+  &:hover {
+    opacity: .9;
+  }
+
+  .fa {
+    margin: 11px 10px 0 0;
+    font-size: 18px;
+    float: left;
   }
 }
 
