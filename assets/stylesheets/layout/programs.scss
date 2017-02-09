@@ -191,6 +191,7 @@
 
       @include media($mobile) {
         float: none;
+        margin-top: 20px;
       }
     }
   }
@@ -213,6 +214,10 @@
     @include media($mobile) {
       margin: 20px 0 0 0;
       text-align: left;
+      border-right: none;
+      padding-right: 0;
+      border-bottom: 1px solid $lw-light-bg;
+      padding-bottom: 25px;
     }
 
     .second {
@@ -273,6 +278,15 @@
   position: absolute;
   right: 0;
   top: 15px;
+
+  @include media($tablet) {
+    width: 100%;
+    position: inherit;
+    right: none;
+    top: none;
+    text-align: left;
+    padding-bottom: 20px;
+  }
 
   > div {
     font-size: 12px;

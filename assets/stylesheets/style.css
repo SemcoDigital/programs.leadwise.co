@@ -335,7 +335,8 @@ header .menu {
       float: left; }
       @media screen and (max-width: 420px) {
         .programs-list li > img {
-          float: none; } }
+          float: none;
+          margin-top: 20px; } }
   @media screen and (max-width: 420px) {
     .programs-list li:first-child {
       border-top: none;
@@ -349,7 +350,11 @@ header .menu {
     @media screen and (max-width: 420px) {
       .programs-list .program-infos {
         margin: 20px 0 0 0;
-        text-align: left; } }
+        text-align: left;
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 1px solid #EAEAEA;
+        padding-bottom: 25px; } }
     .programs-list .program-infos .second {
       margin-left: 20px; }
   .programs-list h4 {
@@ -387,6 +392,14 @@ header .menu {
   position: absolute;
   right: 0;
   top: 15px; }
+  @media screen and (max-width: 768px) {
+    .program-aside {
+      width: 100%;
+      position: inherit;
+      right: none;
+      top: none;
+      text-align: left;
+      padding-bottom: 20px; } }
   .program-aside > div {
     font-size: 12px;
     margin-top: 10px;
