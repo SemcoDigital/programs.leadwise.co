@@ -461,7 +461,7 @@ header .menu {
   margin-top: 0; }
   .program-page .programs-list li {
     margin: 0 !important;
-    padding: 15px;
+    padding: 15px 0;
     box-shadow: none;
     border-bottom: 2px solid #EAEAEA; }
     @media screen and (max-width: 420px) {
@@ -471,10 +471,10 @@ header .menu {
         margin-top: 0; } }
 
 .program-description {
-  padding: 50px 0; }
+  padding: 40px 0; }
   @media screen and (max-width: 420px) {
     .program-description {
-      padding: 40px 0; } }
+      padding: 20px 0; } }
   .program-description p {
     line-height: 26px; }
     .program-description p strong,

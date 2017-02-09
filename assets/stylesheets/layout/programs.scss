@@ -382,7 +382,7 @@
 
     li {
       margin: 0 !important;
-      padding: 15px;
+      padding: 15px 0;
       box-shadow: none;
       border-bottom: 2px solid $lw-light-bg;
 
@@ -399,10 +399,10 @@
 // Program description
 
 .program-description {
-  padding: 50px 0;
+  padding: 40px 0;
 
   @include media($mobile) {
-    padding: 40px 0;
+    padding: 20px 0;
   }
 
   p {
