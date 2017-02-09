@@ -2,88 +2,89 @@
 layout: default
 ---
 
-<!-- Header -->
-<input type="checkbox" id="sidebartoggle" name="" value="">
-<header>
-  <div class="wrap-content">
-    <img src="assets/images/logo-leadwise-programs.svg" alt="LeadWise Programs" class="logo">
-    <label for="sidebartoggle" class="sidebartogle-button">
-      <img class="btn-menu" src="assets/images/icon-menu.svg" alt="menu">
-    </label>
-    <ul class="menu" id="main-menu">
-      <li><a class="scroll-link" data-soffset="0" href="#why">Why</a></li>
-      <li><a class="scroll-link" data-soffset="0" href="#keybenefits">Key benefits</a></li>
-      <li><a class="scroll-link" data-soffset="0" href="#brochure">Brochure</a></li>
-      <li><a class="scroll-link btn-cta" data-soffset="0" href="#pricing">Start Now</a></li>
-    </ul>
-  </div>
-</header>
+<div class="program-page">
 
-<!-- Programs list -->
-<section class="programs program-page">
-  <div class="wrap-content">
+  <!-- Header -->
+  <input type="checkbox" id="sidebartoggle" name="" value="">
+  <header>
+    <div class="wrap-content">
 
-    <ul class="programs-list">
-      <li>
-        <img src="assets/images/program-thumb.jpg">
-        <div class="program-infos">
-          <h4>
-            <a href="#">
-              Building Trust: a Semco Style Workshop
-            </a>
-          </h4>
-          <span class="post-infos" style="display: none;">
-            <span>Amsterdan</span>
-            <span class="second">07.25.2017</span>
-          </span>
-          <div class="program-nav">
-            <div class="program-price">
-              USD 150 / participant
+      <img src="/assets/images/logo-leadwise-programs.svg" alt="LeadWise Programs" class="logo">
+
+      <label for="sidebartoggle" class="sidebartogle-button">
+        <img class="btn-menu" src="assets/images/icon-menu.svg" alt="menu">
+      </label>
+
+      <ul class="menu" id="main-menu">
+        <li><a class="scroll-link" data-soffset="0" href="#why">Why</a></li>
+        <li><a class="scroll-link" data-soffset="0" href="#keybenefits">Key benefits</a></li>
+        <li><a class="scroll-link" data-soffset="0" href="#brochure">Brochure</a></li>
+        <li><a class="scroll-link btn-cta" data-soffset="0" href="#pricing">Start Now</a></li>
+      </ul>
+
+    </div>
+  </header>
+
+  <!-- Programs list -->
+  <section class="programs">
+    <div class="wrap-content">
+
+      <ul class="programs-list">
+        <li>
+          <img src="/assets/images/program-thumb.jpg">
+          <div class="program-infos">
+            <h4>{{ page.title }}</h4>
+            <span class="post-infos" style="display: none;">
+              <span>Amsterdan</span>
+              <span class="second">07.25.2017</span>
+            </span>
+            <div class="program-nav">
+              <div class="program-price">
+                USD 150 / participant
+              </div>
             </div>
           </div>
-        </div>
-        <aside class="program-aside">
-          <div>One-day workshop</div>
-          <div>In-person</div>
-          <div><strong>10-20</strong> participants</div>
-        </aside>
-      </li>
-    </ul>
+          <aside class="program-aside">
+            <div>One-day workshop</div>
+            <div>In-person</div>
+            <div><strong>10-20</strong> participants</div>
+          </aside>
+        </li>
+      </ul>
 
-  </div>
-</section>
+    </div>
+  </section>
 
+  <!-- Programs topics -->
+  <section style="display: none;">
+    {% for topic in page.topics %}
+      <p>{{ topic }}</i></p>
+    {% endfor %}
+  </section>
 
-<section style="display: none;">
-  <h3> {{ page.title }} MIKAEL</h3>
-  <p> {{ page.short_description }}</p>
-</section>
+  <!-- Programs description -->
+  <section class="program-description">
+    <div class="wrap-content">
+      <p>{{ page.description }}</p>
+    </div>
+  </section>
 
-<section style="display: none;">
-  {% for topic in page.topics %}
-    <p> <i class="fa fa-check-square-o fa-2x"> {{ topic }}</i>
-  {% endfor %}
-</section>
+  <!--Org Designer Ad-->
+  <section class="org-designer-ad">
+    <div class="wrap-content">
 
-<!-- Programs description -->
-<section class="program-description">
-  <div class="wrap-content">
+      <h3>
+        Are you an organizational designer?<br>
+        Do you want to learn to lead our programs?
+      </h3>
+      <p>
+        Join our community and be connected to companies ready to change how they work.
+      </p>
+      <a href="/application" class="btn-cta">
+        Apply now
+      </a>
 
-    <p>{{ page.description }}</p>
+    </div>
+  </section>
 
-  </div>
-</section>
-
-<!--Org Designer Ad-->
-<section class="org-designer-ad">
-  <h3>
-    Are you an organizational designer?<br>
-    Do you want to learn to lead our programs?
-  </h3>
-  <p>
-    Join our community and be connected to companies ready to change how they work.
-  </p>
-  <a href="/application" class="btn-cta">
-    Apply now
-  </a>
-</section>
+</div>

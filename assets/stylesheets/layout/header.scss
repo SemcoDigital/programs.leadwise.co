@@ -1,4 +1,5 @@
 header {
+  @include clearfix;
 
   @include media($tablet) {
     position: absolute;
@@ -18,7 +19,6 @@ header {
   }
 
   .menu {
-    display: table;
     float: right;
     font-family: 'open_sans_light';
     margin: 4em 0;
