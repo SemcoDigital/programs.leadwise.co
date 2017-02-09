@@ -194,6 +194,16 @@ header .menu {
     height: 3em;
     margin: 2.5em 0; }
 
+.programs .wrap-content,
+.program-description .wrap-content,
+.brochure .wrap-content {
+  width: 800px; }
+  @media screen and (max-width: 768px) {
+    .programs .wrap-content,
+    .program-description .wrap-content,
+    .brochure .wrap-content {
+      width: 100%; } }
+
 .main-banner {
   text-align: center;
   background: #fff url("../images/banner-bg.jpg") 0 -100px;
@@ -427,13 +437,17 @@ header .menu {
     .program-description p b {
       font-family: open_sans_bold; }
 
-.programs .wrap-content,
-.program-description .wrap-content {
-  width: 800px; }
-  @media screen and (max-width: 768px) {
-    .programs .wrap-content,
-    .program-description .wrap-content {
-      width: 100%; } }
+.brochure {
+  text-align: center;
+  padding: 60px 0; }
+  .brochure h3 {
+    color: #30A7E9;
+    margin: 0 0 20px 0; }
+    @media screen and (max-width: 768px) {
+      .brochure h3 {
+        font-size: 26px; } }
+  .brochure p {
+    margin: 0 0 40px 0; }
 
 .org-designer-ad {
   color: #FFFFFF;

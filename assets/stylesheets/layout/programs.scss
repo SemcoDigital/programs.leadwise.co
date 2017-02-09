@@ -1,3 +1,19 @@
+// Grid
+
+.programs,
+.program-description,
+.brochure {
+
+  .wrap-content {
+    width: 800px;
+
+    @include media($tablet) {
+      width: 100%;
+    }
+  }
+}
+
+
 // Main banner
 
 .main-banner {
@@ -341,17 +357,23 @@
 }
 
 
-// Grid
+// Brochure
 
-.programs,
-.program-description {
+.brochure {
+  text-align: center;
+  padding: 60px 0;
 
-  .wrap-content {
-    width: 800px;
+  h3 {
+    color: $lw-blue;
+    margin: 0 0 20px 0;
 
     @include media($tablet) {
-      width: 100%;
+      font-size: 26px;
     }
+  }
+
+  p {
+    margin: 0 0 40px 0;
   }
 }
 
@@ -439,4 +461,3 @@
     float: left;
   }
 }
-
