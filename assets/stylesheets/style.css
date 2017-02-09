@@ -402,6 +402,58 @@ header .menu {
     .program-aside > div strong {
       font-family: 'open_sans_bold'; }
 
+.program-page .programs-list {
+  margin-top: 0; }
+  .program-page .programs-list li {
+    margin: 0 !important;
+    padding: 15px 0;
+    box-shadow: none;
+    border-bottom: 2px solid #EAEAEA; }
+    @media screen and (max-width: 420px) {
+      .program-page .programs-list li {
+        border-top: none;
+        padding-top: 0;
+        margin-top: 0; } }
+  .program-page .programs-list .program-infos {
+    margin-right: 230px;
+    text-align: center; }
+    @media screen and (max-width: 420px) {
+      .program-page .programs-list .program-infos {
+        margin-right: 0;
+        margin-left: 0; } }
+
+.program-description {
+  padding: 40px 0; }
+  @media screen and (max-width: 420px) {
+    .program-description {
+      padding: 20px 0; } }
+  .program-description p {
+    line-height: 26px; }
+    .program-description p strong,
+    .program-description p b {
+      font-family: open_sans_bold; }
+
+.programs .wrap-content,
+.program-description .wrap-content {
+  width: 800px; }
+  @media screen and (max-width: 420px) {
+    .programs .wrap-content,
+    .program-description .wrap-content {
+      width: 100%; } }
+
+.org-designer-ad {
+  color: #FFFFFF;
+  background-image: url("../images/org-designer-ad-back.jpg");
+  background-repeat: no-repeat;
+  padding: 40px 0;
+  text-align: center; }
+  .org-designer-ad h3 {
+    margin: 0 0 20px 0; }
+  .org-designer-ad .btn-cta {
+    margin-top: 10px; }
+    .org-designer-ad .btn-cta:hover {
+      background: #fff; }
+
 .yellow-but {
   background: #ffcc00;
   color: #000000; }
@@ -443,50 +495,5 @@ header .menu {
     margin: 11px 10px 0 0;
     font-size: 18px;
     float: left; }
-
-.org-designer-ad {
-  color: #FFFFFF;
-  background-image: url("../images/org-designer-ad-back.jpg");
-  background-repeat: no-repeat;
-  padding: 40px 0;
-  text-align: center; }
-  .org-designer-ad h3 {
-    margin: 0 0 20px 0; }
-  .org-designer-ad .btn-cta {
-    margin-top: 10px; }
-    .org-designer-ad .btn-cta:hover {
-      background: #fff; }
-
-.program-page .programs-list {
-  margin-top: 0; }
-  .program-page .programs-list li {
-    margin: 0 !important;
-    padding: 15px 0;
-    box-shadow: none;
-    border-bottom: 2px solid #EAEAEA; }
-    @media screen and (max-width: 420px) {
-      .program-page .programs-list li {
-        border-top: none;
-        padding-top: 0;
-        margin-top: 0; } }
-
-.program-description {
-  padding: 40px 0; }
-  @media screen and (max-width: 420px) {
-    .program-description {
-      padding: 20px 0; } }
-  .program-description p {
-    line-height: 26px; }
-    .program-description p strong,
-    .program-description p b {
-      font-family: open_sans_bold; }
-
-.programs .wrap-content,
-.program-description .wrap-content {
-  width: 800px; }
-  @media screen and (max-width: 420px) {
-    .programs .wrap-content,
-    .program-description .wrap-content {
-      width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

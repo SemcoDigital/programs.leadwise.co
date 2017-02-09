@@ -292,6 +292,97 @@
 }
 
 
+// Program page
+
+.program-page {
+
+  .programs-list {
+    margin-top: 0;
+
+    li {
+      margin: 0 !important;
+      padding: 15px 0;
+      box-shadow: none;
+      border-bottom: 2px solid $lw-light-bg;
+
+      @include media($mobile) {
+        border-top: none;
+        padding-top: 0;
+        margin-top: 0;
+      }
+    }
+
+    .program-infos {
+      margin-right: 230px;
+      text-align: center;
+
+      @include media($mobile) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+
+// Program description
+
+.program-description {
+  padding: 40px 0;
+
+  @include media($mobile) {
+    padding: 20px 0;
+  }
+
+  p {
+    line-height: 26px;
+
+    strong,
+    b {
+      font-family: open_sans_bold;
+    }
+  }
+}
+
+
+// Grid
+
+.programs,
+.program-description {
+
+  .wrap-content {
+    width: 800px;
+
+    @include media($mobile) {
+      width: 100%;
+    }
+  }
+}
+
+
+// Org Designer Ad
+
+.org-designer-ad {
+  color: $font-white;
+  background-image: url("../images/org-designer-ad-back.jpg");
+  background-repeat: no-repeat;
+  padding: 40px 0;
+  text-align: center;
+
+  h3 {
+    margin: 0 0 20px 0;
+  }
+
+  .btn-cta {
+    margin-top: 10px;
+
+    &:hover {
+      background: #fff;
+    }
+  }
+}
+
+
 // Buttons
 
 .yellow-but {
@@ -349,83 +440,3 @@
   }
 }
 
-
-// Org Designer Ad
-
-.org-designer-ad {
-  color: $font-white;
-  background-image: url("../images/org-designer-ad-back.jpg");
-  background-repeat: no-repeat;
-  padding: 40px 0;
-  text-align: center;
-
-  h3 {
-    margin: 0 0 20px 0;
-  }
-
-  .btn-cta {
-    margin-top: 10px;
-
-    &:hover {
-      background: #fff;
-    }
-  }
-}
-
-
-// Program page
-
-.program-page {
-
-  .programs-list {
-    margin-top: 0;
-
-    li {
-      margin: 0 !important;
-      padding: 15px 0;
-      box-shadow: none;
-      border-bottom: 2px solid $lw-light-bg;
-
-      @include media($mobile) {
-        border-top: none;
-        padding-top: 0;
-        margin-top: 0;
-      }
-    }
-  }
-}
-
-
-// Program description
-
-.program-description {
-  padding: 40px 0;
-
-  @include media($mobile) {
-    padding: 20px 0;
-  }
-
-  p {
-    line-height: 26px;
-
-    strong,
-    b {
-      font-family: open_sans_bold;
-    }
-  }
-}
-
-
-// Grid
-
-.programs,
-.program-description {
-
-  .wrap-content {
-    width: 800px;
-
-    @include media($mobile) {
-      width: 100%;
-    }
-  }
-}
