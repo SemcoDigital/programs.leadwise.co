@@ -345,7 +345,7 @@ header .menu {
     margin-left: 230px;
     margin-right: 165px;
     border-right: 1px solid #EAEAEA;
-    padding: 10px 20px 10px 0; }
+    padding: 10px 20px 0 0; }
     @media screen and (max-width: 420px) {
       .programs-list .program-infos {
         margin: 20px 0 0 0;
