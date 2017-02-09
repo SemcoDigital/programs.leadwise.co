@@ -55,17 +55,53 @@ layout: default
     </div>
   </section>
 
-  <!-- Programs topics -->
-  <section style="display: none;">
-    {% for topic in page.topics %}
-      <p>{{ topic }}</i></p>
-    {% endfor %}
-  </section>
-
   <!-- Programs description -->
   <section class="program-description">
     <div class="wrap-content">
+
       <p>{{ page.description }}</p>
+
+    </div>
+  </section>
+
+  <!-- Programs topics -->
+  <section style="display: none;">
+
+    {% for topic in page.topics %}
+      <p>{{ topic }}</p>
+    {% endfor %}
+
+  </section>
+
+  <!-- Key benefits -->
+  <section class="sample-list" id="keybenefits">
+    <div class="wrap-content">
+      <h3>By implementing our programs, you will:</h3>
+      <div>
+        <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+        <p>
+          Establish trust as the foundation for better<br> ways of working.
+        </p>
+      </div>
+      <div>
+        <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+        <p>
+          Have a positive and hands-on experience around trust through team-building exercises.
+        </p>
+      </div>
+      <div>
+        <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+        <p>
+          Inspire participants to immediately start building trust as individuals, and as a team.
+        </p>
+      </div>
+      <div>
+        <i class="fa fa-download" aria-hidden="true"></i>
+        <p>
+          You will find all of the workshop details in our brochure.<br>
+          <a href="#">Download</a>
+        </p>
+      </div>
     </div>
   </section>
 

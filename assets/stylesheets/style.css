@@ -282,6 +282,10 @@ header .menu {
   .sample-list p {
     margin: 0 0 0 50px;
     color: #fff; }
+  .sample-list a {
+    color: #fff;
+    font-family: open_sans_bold;
+    text-decoration: underline; }
 
 .how-it-works h3 {
   color: #30A7E9; }
