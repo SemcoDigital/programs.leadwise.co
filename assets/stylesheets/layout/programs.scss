@@ -140,14 +140,6 @@
   padding: 60px 0;
   background: $lw-light-bg;
 
-  .wrap-content {
-    width: 800px;
-
-    @include media($mobile) {
-      width: 100%;
-    }
-  }
-
   h3 {
     color: $lw-blue;
     margin: 20px 0 0 0;
@@ -376,6 +368,64 @@
 
     &:hover {
       background: #fff;
+    }
+  }
+}
+
+
+// Program page
+
+.program-page {
+
+  .programs-list {
+    margin-top: 0;
+
+    li {
+      margin: 0 !important;
+      padding: 15px;
+      box-shadow: none;
+      border-bottom: 2px solid $lw-light-bg;
+
+      @include media($mobile) {
+        border-top: none;
+        padding-top: 0;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+
+// Program description
+
+.program-description {
+  padding: 50px 0;
+
+  @include media($mobile) {
+    padding: 40px 0;
+  }
+
+  p {
+    line-height: 26px;
+
+    strong,
+    b {
+      font-family: open_sans_bold;
+    }
+  }
+}
+
+
+// Grid
+
+.programs,
+.program-description {
+
+  .wrap-content {
+    width: 800px;
+
+    @include media($mobile) {
+      width: 100%;
     }
   }
 }
