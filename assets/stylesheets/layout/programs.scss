@@ -131,6 +131,13 @@
     color: #fff;
     font-family: open_sans_bold;
     text-decoration: underline;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $lw-yellow;
+
+    &:hover {
+      color: #fff;
+    }
   }
 }
 
@@ -363,6 +370,12 @@
   text-align: center;
   padding: 60px 0;
 
+  .fa {
+    font-size: 60px;
+    color: $lw-blue;
+    margin-bottom: 20px;
+  }
+
   h3 {
     color: $lw-blue;
     margin: 0 0 20px 0;
@@ -374,6 +387,29 @@
 
   p {
     margin: 0 0 40px 0;
+  }
+
+  a {
+    height: 46px;
+    line-height: 46px;
+    background: $lw-blue;
+    color: #fff;
+    font-size: 16px;
+    font-family: open_sans_bold;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 20px;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    .fa {
+      float: left;
+      margin: 13px 12px 0 0;
+      font-size: 20px;
+      color: #fff;
+    }
   }
 }
 

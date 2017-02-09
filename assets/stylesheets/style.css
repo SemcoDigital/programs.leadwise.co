@@ -295,7 +295,12 @@ header .menu {
   .sample-list a {
     color: #fff;
     font-family: open_sans_bold;
-    text-decoration: underline; }
+    text-decoration: underline;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ffcc00; }
+    .sample-list a:hover {
+      color: #fff; }
 
 .how-it-works h3 {
   color: #30A7E9; }
@@ -440,6 +445,10 @@ header .menu {
 .brochure {
   text-align: center;
   padding: 60px 0; }
+  .brochure .fa {
+    font-size: 60px;
+    color: #30A7E9;
+    margin-bottom: 20px; }
   .brochure h3 {
     color: #30A7E9;
     margin: 0 0 20px 0; }
@@ -448,6 +457,23 @@ header .menu {
         font-size: 26px; } }
   .brochure p {
     margin: 0 0 40px 0; }
+  .brochure a {
+    height: 46px;
+    line-height: 46px;
+    background: #30A7E9;
+    color: #fff;
+    font-size: 16px;
+    font-family: open_sans_bold;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 20px; }
+    .brochure a:hover {
+      opacity: .8; }
+    .brochure a .fa {
+      float: left;
+      margin: 13px 12px 0 0;
+      font-size: 20px;
+      color: #fff; }
 
 .org-designer-ad {
   color: #FFFFFF;
