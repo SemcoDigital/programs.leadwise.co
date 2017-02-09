@@ -2,35 +2,55 @@
 layout: default
 ---
 
-<section class="wrap-content program-page">
+<!-- Header -->
+<input type="checkbox" id="sidebartoggle" name="" value="">
+<header>
+  <div class="wrap-content">
+    <img src="assets/images/logo-leadwise-programs.svg" alt="LeadWise Programs" class="logo">
+    <label for="sidebartoggle" class="sidebartogle-button">
+      <img class="btn-menu" src="assets/images/icon-menu.svg" alt="menu">
+    </label>
+    <ul class="menu" id="main-menu">
+      <li><a class="scroll-link" data-soffset="0" href="#why">Why</a></li>
+      <li><a class="scroll-link" data-soffset="0" href="#keybenefits">Key benefits</a></li>
+      <li><a class="scroll-link" data-soffset="0" href="#brochure">Brochure</a></li>
+      <li><a class="scroll-link btn-cta" data-soffset="0" href="#pricing">Start Now</a></li>
+    </ul>
+  </div>
+</header>
 
-  <ul class="programs-list">
-    <li>
-      <img src="assets/images/program-thumb.jpg">
-      <div class="program-infos">
-        <h4>
-          <a href="#">
-            Building Trust: a Semco Style Workshop
-          </a>
-        </h4>
-        <span class="post-infos" style="display: none;">
-          <span>Amsterdan</span>
-          <span class="second">07.25.2017</span>
-        </span>
-        <div class="program-nav">
-          <div class="program-price">
-            USD 150 / participant
+<!-- Programs list -->
+<section class="programs program-page">
+  <div class="wrap-content">
+
+    <ul class="programs-list">
+      <li>
+        <img src="assets/images/program-thumb.jpg">
+        <div class="program-infos">
+          <h4>
+            <a href="#">
+              Building Trust: a Semco Style Workshop
+            </a>
+          </h4>
+          <span class="post-infos" style="display: none;">
+            <span>Amsterdan</span>
+            <span class="second">07.25.2017</span>
+          </span>
+          <div class="program-nav">
+            <div class="program-price">
+              USD 150 / participant
+            </div>
           </div>
         </div>
-      </div>
-      <aside class="program-aside">
-        <div>One-day workshop</div>
-        <div>In-person</div>
-        <div><strong>10-20</strong> participants</div>
-      </aside>
-    </li>
-  </ul>
+        <aside class="program-aside">
+          <div>One-day workshop</div>
+          <div>In-person</div>
+          <div><strong>10-20</strong> participants</div>
+        </aside>
+      </li>
+    </ul>
 
+  </div>
 </section>
 
 
@@ -45,6 +65,7 @@ layout: default
   {% endfor %}
 </section>
 
+<!-- Programs description -->
 <section class="program-description">
   <div class="wrap-content">
 
@@ -66,4 +87,3 @@ layout: default
     Apply now
   </a>
 </section>
-
