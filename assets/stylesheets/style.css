@@ -295,7 +295,7 @@ header .menu {
   .programs h3 {
     color: #30A7E9;
     margin: 20px 0 0 0; }
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 768px) {
       .programs h3 {
         font-size: 34px;
         text-align: left;
@@ -305,7 +305,7 @@ header .menu {
   text-align: left;
   margin: 50px 0 0 0;
   padding: 0; }
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 768px) {
     .programs-list {
       margin-top: 30px; } }
   .programs-list li {
@@ -319,7 +319,7 @@ header .menu {
       clear: both;
       content: "";
       display: block; }
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 768px) {
       .programs-list li {
         text-align: center;
         border-top: 2px solid #EAEAEA;
@@ -328,11 +328,11 @@ header .menu {
     .programs-list li > img {
       width: 200px;
       float: left; }
-      @media screen and (max-width: 420px) {
+      @media screen and (max-width: 768px) {
         .programs-list li > img {
           float: none;
           margin-top: 20px; } }
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 768px) {
     .programs-list li:first-child {
       border-top: none;
       padding-top: 0;
@@ -342,7 +342,7 @@ header .menu {
     margin-right: 165px;
     border-right: 1px solid #EAEAEA;
     padding: 10px 20px 0 0; }
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 768px) {
       .programs-list .program-infos {
         margin: 20px 0 0 0;
         text-align: left;
@@ -369,7 +369,7 @@ header .menu {
     font-size: 14px;
     margin: 7px 0 0 0;
     line-height: 22px; }
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 768px) {
       .programs-list p {
         margin-bottom: 15px; } }
   .programs-list .program-nav > div {
@@ -409,7 +409,7 @@ header .menu {
     padding: 15px 0;
     box-shadow: none;
     border-bottom: 2px solid #EAEAEA; }
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 768px) {
       .program-page .programs-list li {
         border-top: none;
         padding-top: 0;
@@ -417,14 +417,14 @@ header .menu {
   .program-page .programs-list .program-infos {
     margin-right: 230px;
     text-align: center; }
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 768px) {
       .program-page .programs-list .program-infos {
         margin-right: 0;
         margin-left: 0; } }
 
 .program-description {
   padding: 40px 0; }
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 768px) {
     .program-description {
       padding: 20px 0; } }
   .program-description p {
@@ -436,7 +436,7 @@ header .menu {
 .programs .wrap-content,
 .program-description .wrap-content {
   width: 800px; }
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 768px) {
     .programs .wrap-content,
     .program-description .wrap-content {
       width: 100%; } }
@@ -483,7 +483,7 @@ header .menu {
   text-align: left !important;
   margin-right: 4px;
   margin-top: 15px; }
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 686px) {
     .sample-but {
       width: 100%;
       display: block;
