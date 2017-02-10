@@ -29,6 +29,7 @@ layout: default
           <img src="/assets/images/program-thumb.jpg">
           <div class="program-infos">
             <h4>{{ page.title }}</h4>
+            <p>{{ page.description }}</p>
             <div class="program-nav">
               <div class="program-price">
                 USD 150 / participant
@@ -42,13 +43,6 @@ layout: default
           </aside>
         </li>
       </ul>
-    </div>
-  </section>
-
-  <!-- Programs description -->
-  <section class="program-description">
-    <div class="wrap-content">
-      <p>{{ page.description }}</p>
     </div>
   </section>
 
@@ -202,7 +196,10 @@ layout: default
             Nominate someone from your team to be trained to facilitate the selected program at your company.
           </li>
         </ul>
-        </div>
+      </div>
+      <div class="thankyou-message" style="display: none;">
+        <p>Thank you!</p>
+      </div>
       <form action="#">
         <ul>
           <li>
