@@ -3,8 +3,7 @@
 .programs,
 .program-description,
 .why,
-.brochure,
-#pricing {
+.brochure {
 
   .wrap-content {
     width: 800px;
@@ -544,28 +543,39 @@
 #pricing {
   background: $lw-blue;
   color: #fff;
-
   h3 {
     color: #fff;
   }
-
   span {
     color: rgba(#fff, .7);
   }
-
   h4 {
     color: rgba(#fff, 1);
   }
-
-
   ul {
     border-left: 3px solid rgba(#fff, .3);
   }
   .wrap-content{
+    width: 550px;
+    @include media($tablet) {
+      width: 100%;
+    }
     div{
       width: 100%;
     }
   }
+}
+.note-phrase {
+  text-transform: uppercase;
+  font-family: open_sans_bold;
+  font-size: 12px !important;
+  line-height: 20px !important;
+  background: rgba(#fff, .1);
+  border: 1px solid rgba(#fff, .2);
+  padding: 1em 2em;
+  text-align: center;
+  letter-spacing: 0;
+  margin: 0 !important;
 }
 
 

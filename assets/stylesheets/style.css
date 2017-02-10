@@ -197,15 +197,13 @@ header .menu {
 .programs .wrap-content,
 .program-description .wrap-content,
 .why .wrap-content,
-.brochure .wrap-content,
-#pricing .wrap-content {
+.brochure .wrap-content {
   width: 800px; }
   @media screen and (max-width: 768px) {
     .programs .wrap-content,
     .program-description .wrap-content,
     .why .wrap-content,
-    .brochure .wrap-content,
-    #pricing .wrap-content {
+    .brochure .wrap-content {
       width: 100%; } }
 
 .main-banner {
@@ -561,7 +559,6 @@ header .menu {
       font-size: 20px;
       color: #fff; }
 
-<<<<<<< HEAD
 #pricing {
   background: #30A7E9;
   color: #fff; }
@@ -573,9 +570,26 @@ header .menu {
     color: white; }
   #pricing ul {
     border-left: 3px solid rgba(255, 255, 255, 0.3); }
-  #pricing .wrap-content div {
-    width: 100%; }
-=======
+  #pricing .wrap-content {
+    width: 550px; }
+    @media screen and (max-width: 768px) {
+      #pricing .wrap-content {
+        width: 100%; } }
+    #pricing .wrap-content div {
+      width: 100%; }
+
+.note-phrase {
+  text-transform: uppercase;
+  font-family: open_sans_bold;
+  font-size: 12px !important;
+  line-height: 20px !important;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1em 2em;
+  text-align: center;
+  letter-spacing: 0;
+  margin: 0 !important; }
+
 .startnow {
   text-align: center;
   background: #30A7E9;
@@ -646,9 +660,6 @@ header .menu {
     padding: 10px;
     min-height: 120px;
     max-height: 300px; }
-<<<<<<< HEAD
->>>>>>> 23cbf1bc63078a6f0d7104de326f75abdb9ba21d
-=======
   .startnow input[type="submit"] {
     width: 100px;
     height: 44px;
@@ -663,7 +674,6 @@ header .menu {
     text-transform: uppercase; }
     .startnow input[type="submit"]:hover {
       opacity: .8; }
->>>>>>> 3ef32e387c8d85077bb02832083954fb124b5513
 
 .org-designer-ad {
   color: #FFFFFF;
