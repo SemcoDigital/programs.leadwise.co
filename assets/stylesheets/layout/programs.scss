@@ -575,6 +575,7 @@
   text-align: center;
   background: $lw-blue;
   padding: 60px 0;
+  color: #fff;
 
   @include media($tablet) {
     padding: 40px 0;
@@ -589,6 +590,32 @@
     }
   }
 
+  .startnow-entry {
+    width: 440px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0;
+    line-height: 26px;
+
+    p {
+      margin: 0;
+      font-family: open_sans_bold;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0 0 20px 20px;
+    }
+
+    li {
+      margin-top: 10px;
+    }
+
+    @include media($tablet) {
+      width: 100%;
+    }
+  }
+
   form {
     width: 440px;
     margin: 0 auto;
@@ -597,17 +624,17 @@
     @include media($tablet) {
       width: 100%;
     }
-  }
 
-  ul {
-    padding: 0;
-    margin: 0;
-  }
+    ul {
+      padding: 0;
+      margin: 0;
+    }
 
-  li {
-    margin-top: 12px;
-    list-style-type: none;
-    text-align: left;
+    li {
+      margin-top: 12px;
+      list-style-type: none;
+      text-align: left;
+    }
   }
 
   label {
@@ -643,6 +670,23 @@
     max-height: 300px;
   }
 
+  input[type="submit"] {
+    width: 100px;
+    height: 44px;
+    line-height: 0;
+    font-size: 16px;
+    font-family: 'open_sans_light';
+    border: none;
+    background: rgba(#fff, 1);
+    color: $lw-blue;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
 }
 
 

@@ -579,7 +579,8 @@ header .menu {
 .startnow {
   text-align: center;
   background: #30A7E9;
-  padding: 60px 0; }
+  padding: 60px 0;
+  color: #fff; }
   @media screen and (max-width: 768px) {
     .startnow {
       padding: 40px 0; } }
@@ -589,6 +590,23 @@ header .menu {
     @media screen and (max-width: 768px) {
       .startnow h3 {
         font-size: 26px; } }
+  .startnow .startnow-entry {
+    width: 440px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0;
+    line-height: 26px; }
+    .startnow .startnow-entry p {
+      margin: 0;
+      font-family: open_sans_bold; }
+    .startnow .startnow-entry ul {
+      padding: 0;
+      margin: 0 0 20px 20px; }
+    .startnow .startnow-entry li {
+      margin-top: 10px; }
+    @media screen and (max-width: 768px) {
+      .startnow .startnow-entry {
+        width: 100%; } }
   .startnow form {
     width: 440px;
     margin: 0 auto;
@@ -596,13 +614,13 @@ header .menu {
     @media screen and (max-width: 768px) {
       .startnow form {
         width: 100%; } }
-  .startnow ul {
-    padding: 0;
-    margin: 0; }
-  .startnow li {
-    margin-top: 12px;
-    list-style-type: none;
-    text-align: left; }
+    .startnow form ul {
+      padding: 0;
+      margin: 0; }
+    .startnow form li {
+      margin-top: 12px;
+      list-style-type: none;
+      text-align: left; }
   .startnow label {
     font-family: open_sans_bold;
     margin-bottom: 5px;
@@ -628,7 +646,24 @@ header .menu {
     padding: 10px;
     min-height: 120px;
     max-height: 300px; }
+<<<<<<< HEAD
 >>>>>>> 23cbf1bc63078a6f0d7104de326f75abdb9ba21d
+=======
+  .startnow input[type="submit"] {
+    width: 100px;
+    height: 44px;
+    line-height: 0;
+    font-size: 16px;
+    font-family: 'open_sans_light';
+    border: none;
+    background: white;
+    color: #30A7E9;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase; }
+    .startnow input[type="submit"]:hover {
+      opacity: .8; }
+>>>>>>> 3ef32e387c8d85077bb02832083954fb124b5513
 
 .org-designer-ad {
   color: #FFFFFF;
