@@ -641,6 +641,23 @@
     max-height: 300px;
   }
 
+  input[type="submit"] {
+    width: 100px;
+    height: 44px;
+    line-height: 0;
+    font-size: 16px;
+    font-family: 'open_sans_light';
+    border: none;
+    background: rgba(#fff, 1);
+    color: $lw-blue;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
 }
 
 

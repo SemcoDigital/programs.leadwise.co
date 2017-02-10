@@ -629,6 +629,20 @@ header .menu {
     padding: 10px;
     min-height: 120px;
     max-height: 300px; }
+  .startnow input[type="submit"] {
+    width: 100px;
+    height: 44px;
+    line-height: 0;
+    font-size: 16px;
+    font-family: 'open_sans_light';
+    border: none;
+    background: white;
+    color: #30A7E9;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase; }
+    .startnow input[type="submit"]:hover {
+      opacity: .8; }
 
 .org-designer-ad {
   color: #FFFFFF;
