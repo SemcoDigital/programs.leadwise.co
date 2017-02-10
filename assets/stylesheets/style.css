@@ -462,11 +462,12 @@ header .menu {
     line-height: 46px;
     background: #30A7E9;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     font-family: open_sans_bold;
     display: inline-block;
     text-decoration: none;
-    padding: 0 20px; }
+    padding: 0 20px;
+    text-transform: uppercase; }
     .brochure a:hover {
       opacity: .8; }
     .brochure a .fa {

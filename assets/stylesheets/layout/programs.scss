@@ -394,11 +394,12 @@
     line-height: 46px;
     background: $lw-blue;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     font-family: open_sans_bold;
     display: inline-block;
     text-decoration: none;
     padding: 0 20px;
+    text-transform: uppercase;
 
     &:hover {
       opacity: .8;
