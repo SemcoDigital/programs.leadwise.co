@@ -197,13 +197,15 @@ header .menu {
 .programs .wrap-content,
 .program-description .wrap-content,
 .why .wrap-content,
-.brochure .wrap-content {
+.brochure .wrap-content,
+#pricing .wrap-content {
   width: 800px; }
   @media screen and (max-width: 768px) {
     .programs .wrap-content,
     .program-description .wrap-content,
     .why .wrap-content,
-    .brochure .wrap-content {
+    .brochure .wrap-content,
+    #pricing .wrap-content {
       width: 100%; } }
 
 .main-banner {
@@ -558,6 +560,20 @@ header .menu {
       margin: 13px 12px 0 0;
       font-size: 20px;
       color: #fff; }
+
+#pricing {
+  background: #30A7E9;
+  color: #fff; }
+  #pricing h3 {
+    color: #fff; }
+  #pricing span {
+    color: rgba(255, 255, 255, 0.7); }
+  #pricing h4 {
+    color: white; }
+  #pricing ul {
+    border-left: 3px solid rgba(255, 255, 255, 0.3); }
+  #pricing .wrap-content div {
+    width: 100%; }
 
 .org-designer-ad {
   color: #FFFFFF;

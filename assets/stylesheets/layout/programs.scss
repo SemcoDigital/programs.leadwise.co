@@ -3,7 +3,8 @@
 .programs,
 .program-description,
 .why,
-.brochure {
+.brochure,
+#pricing {
 
   .wrap-content {
     width: 800px;
@@ -535,6 +536,34 @@
       margin: 13px 12px 0 0;
       font-size: 20px;
       color: #fff;
+    }
+  }
+}
+
+// Pricing
+#pricing {
+  background: $lw-blue;
+  color: #fff;
+
+  h3 {
+    color: #fff;
+  }
+
+  span {
+    color: rgba(#fff, .7);
+  }
+
+  h4 {
+    color: rgba(#fff, 1);
+  }
+
+
+  ul {
+    border-left: 3px solid rgba(#fff, .3);
+  }
+  .wrap-content{
+    div{
+      width: 100%;
     }
   }
 }
