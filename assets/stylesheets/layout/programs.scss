@@ -569,6 +569,83 @@
 }
 
 
+// Start Now Form
+
+.startnow {
+  text-align: center;
+  background: $lw-blue;
+  padding: 60px 0;
+
+  @include media($tablet) {
+    padding: 40px 0;
+  }
+
+  h3 {
+    color: #fff;
+    margin: 0 0 20px 0;
+
+    @include media($tablet) {
+      font-size: 26px;
+    }
+  }
+
+  form {
+    width: 440px;
+    margin: 0 auto;
+    padding: 0;
+
+    @include media($tablet) {
+      width: 100%;
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin-top: 12px;
+    list-style-type: none;
+    text-align: left;
+  }
+
+  label {
+    font-family: open_sans_bold;
+    margin-bottom: 5px;
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 14px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    border: 1px solid rgba(#fff, .5);
+    background: rgba(#fff, .2);
+    color: #fff;
+    box-sizing: border-box;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 10px;
+  }
+
+  textarea {
+    padding: 10px;
+    min-height: 120px;
+    max-height: 300px;
+  }
+
+}
+
+
 // Org Designer Ad
 
 .org-designer-ad {

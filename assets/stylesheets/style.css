@@ -561,6 +561,7 @@ header .menu {
       font-size: 20px;
       color: #fff; }
 
+<<<<<<< HEAD
 #pricing {
   background: #30A7E9;
   color: #fff; }
@@ -574,6 +575,60 @@ header .menu {
     border-left: 3px solid rgba(255, 255, 255, 0.3); }
   #pricing .wrap-content div {
     width: 100%; }
+=======
+.startnow {
+  text-align: center;
+  background: #30A7E9;
+  padding: 60px 0; }
+  @media screen and (max-width: 768px) {
+    .startnow {
+      padding: 40px 0; } }
+  .startnow h3 {
+    color: #fff;
+    margin: 0 0 20px 0; }
+    @media screen and (max-width: 768px) {
+      .startnow h3 {
+        font-size: 26px; } }
+  .startnow form {
+    width: 440px;
+    margin: 0 auto;
+    padding: 0; }
+    @media screen and (max-width: 768px) {
+      .startnow form {
+        width: 100%; } }
+  .startnow ul {
+    padding: 0;
+    margin: 0; }
+  .startnow li {
+    margin-top: 12px;
+    list-style-type: none;
+    text-align: left; }
+  .startnow label {
+    font-family: open_sans_bold;
+    margin-bottom: 5px;
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px; }
+  .startnow input[type="text"],
+  .startnow input[type="email"],
+  .startnow textarea {
+    font-size: 14px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    box-sizing: border-box; }
+  .startnow input[type="text"],
+  .startnow input[type="email"] {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 10px; }
+  .startnow textarea {
+    padding: 10px;
+    min-height: 120px;
+    max-height: 300px; }
+>>>>>>> 23cbf1bc63078a6f0d7104de326f75abdb9ba21d
 
 .org-designer-ad {
   color: #FFFFFF;
