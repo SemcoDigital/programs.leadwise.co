@@ -389,8 +389,7 @@
   .why-description {
     margin: 0;
     color: $font-lw-light-bg;
-    font-size: 16px;
-    text-transform: uppercase;
+    font-size: 24px;
   }
 
   ul {
@@ -410,6 +409,17 @@
     p {
       margin: 20px 0 0 0;
       line-height: 26px;
+    }
+
+    .fa {
+      font-size: 40px;
+      float: left;
+      color: $lw-blue;
+      margin-top: -7px;
+    }
+
+    > div {
+      margin-left: 60px;
     }
   }
 
