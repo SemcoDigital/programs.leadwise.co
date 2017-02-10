@@ -562,7 +562,8 @@ header .menu {
 .startnow {
   text-align: center;
   background: #30A7E9;
-  padding: 60px 0; }
+  padding: 60px 0;
+  color: #fff; }
   @media screen and (max-width: 768px) {
     .startnow {
       padding: 40px 0; } }
@@ -572,6 +573,23 @@ header .menu {
     @media screen and (max-width: 768px) {
       .startnow h3 {
         font-size: 26px; } }
+  .startnow .startnow-entry {
+    width: 440px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0;
+    line-height: 26px; }
+    .startnow .startnow-entry p {
+      margin: 0;
+      font-family: open_sans_bold; }
+    .startnow .startnow-entry ul {
+      padding: 0;
+      margin: 0 0 20px 20px; }
+    .startnow .startnow-entry li {
+      margin-top: 10px; }
+    @media screen and (max-width: 768px) {
+      .startnow .startnow-entry {
+        width: 100%; } }
   .startnow form {
     width: 440px;
     margin: 0 auto;
@@ -579,13 +597,13 @@ header .menu {
     @media screen and (max-width: 768px) {
       .startnow form {
         width: 100%; } }
-  .startnow ul {
-    padding: 0;
-    margin: 0; }
-  .startnow li {
-    margin-top: 12px;
-    list-style-type: none;
-    text-align: left; }
+    .startnow form ul {
+      padding: 0;
+      margin: 0; }
+    .startnow form li {
+      margin-top: 12px;
+      list-style-type: none;
+      text-align: left; }
   .startnow label {
     font-family: open_sans_bold;
     margin-bottom: 5px;
