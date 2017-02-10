@@ -2,6 +2,7 @@
 
 .programs,
 .program-description,
+.why,
 .brochure {
 
   .wrap-content {
@@ -348,6 +349,8 @@
 
 .program-description {
   padding: 40px 0;
+  background: $lw-blue;
+  color: #fff;
 
   @include media($tablet) {
     padding: 20px 0;
@@ -364,11 +367,67 @@
 }
 
 
+// Why
+
+.why {
+  text-align: center;
+  padding: 60px 0;
+
+  @include media($tablet) {
+    padding: 40px 0;
+  }
+
+  h3 {
+    color: $lw-blue;
+    margin: 0 0 20px 0;
+
+    @include media($tablet) {
+      font-size: 26px;
+    }
+  }
+
+  .why-description {
+    margin: 0;
+    color: $font-lw-light-bg;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    text-align: left;
+    list-style-type: none;
+    margin: 50px 0 0 0;
+
+    @include media($tablet) {
+      margin: 30px 0 0 0;
+    }
+
+    p {
+      margin: 20px 0 0 0;
+      line-height: 26px;
+    }
+  }
+
+  h4 {
+    font-size: 26px;
+  }
+}
+
+
 // Brochure
 
 .brochure {
   text-align: center;
   padding: 60px 0;
+
+  @include media($tablet) {
+    padding: 40px 0;
+  }
 
   .fa {
     font-size: 60px;

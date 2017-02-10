@@ -196,11 +196,13 @@ header .menu {
 
 .programs .wrap-content,
 .program-description .wrap-content,
+.why .wrap-content,
 .brochure .wrap-content {
   width: 800px; }
   @media screen and (max-width: 768px) {
     .programs .wrap-content,
     .program-description .wrap-content,
+    .why .wrap-content,
     .brochure .wrap-content {
       width: 100%; } }
 
@@ -432,7 +434,9 @@ header .menu {
     margin: 0; }
 
 .program-description {
-  padding: 40px 0; }
+  padding: 40px 0;
+  background: #30A7E9;
+  color: #fff; }
   @media screen and (max-width: 768px) {
     .program-description {
       padding: 20px 0; } }
@@ -442,9 +446,45 @@ header .menu {
     .program-description p b {
       font-family: open_sans_bold; }
 
+.why {
+  text-align: center;
+  padding: 60px 0; }
+  @media screen and (max-width: 768px) {
+    .why {
+      padding: 40px 0; } }
+  .why h3 {
+    color: #30A7E9;
+    margin: 0 0 20px 0; }
+    @media screen and (max-width: 768px) {
+      .why h3 {
+        font-size: 26px; } }
+  .why .why-description {
+    margin: 0;
+    color: #95989A;
+    font-size: 16px;
+    text-transform: uppercase; }
+  .why ul {
+    padding: 0;
+    margin: 0; }
+  .why li {
+    text-align: left;
+    list-style-type: none;
+    margin: 50px 0 0 0; }
+    @media screen and (max-width: 768px) {
+      .why li {
+        margin: 30px 0 0 0; } }
+    .why li p {
+      margin: 20px 0 0 0;
+      line-height: 26px; }
+  .why h4 {
+    font-size: 26px; }
+
 .brochure {
   text-align: center;
   padding: 60px 0; }
+  @media screen and (max-width: 768px) {
+    .brochure {
+      padding: 40px 0; } }
   .brochure .fa {
     font-size: 60px;
     color: #30A7E9;
