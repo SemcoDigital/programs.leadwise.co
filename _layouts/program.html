@@ -191,38 +191,30 @@ layout: default
           </li>
         </ul>
       </div>
-      <div class="thankyou-message" style="display: none;">
-        <p>Thank you!</p>
-      </div>
-      <form action="#">
-        <ul>
-          <li>
-            <label for="startnowname">Name</label>
-            <input type="text" name="startnowname" id="startnowname">
-          </li>
-          <li>
-            <label for="startnowcompany">Company</label>
-            <input type="text" name="startnowcompany" id="startnowcompany">
-          </li>
-          <li>
-            <label for="startnowrole">Role</label>
-            <input type="text" name="startnowrole" id="startnowrole">
-          </li>
-          <li>
-            <label for="startnowemail">Email</label>
-            <input type="email" name="startnowemail" id="startnowemail">
-          </li>
-          <li>
-            <label for="startnowmessage">Message</label>
-            <textarea type="text" name="startnowmessage" id="startnowmessage"></textarea>
-          </li>
-          <li>
-            <input type="submit">
-          </li>
-        </ul>
-      </form>
+
+      <a href="#" class="openModal">
+        Contact us for next steps
+      </a>
+
     </div>
   </section>
+
+<div id="openModal" class="modalDialog" style="display: none;">
+  <div>
+    <a title="" class="close">
+      <img src="/assets/images/icons/menu-close.svg" alt="Close">
+    </a>
+    <div class="modal-body">
+      <div id="become-partner">
+        {% include startnow.html %}
+      </div>
+      <div class="information" style="display: none;">
+        <h3>Thank you!</h3>
+        <p>As soon as we receive your information, we'll send you an email to schedule a call. </p>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!--Org Designer Ad-->
   <section class="org-designer-ad">

@@ -697,13 +697,25 @@
       opacity: .8;
     }
   }
-}
 
-.thankyou-message {
+  .openModal {
+    height: 44px;
+    padding: 0 15px;
+    line-height: 44px;
+    font-size: 16px;
+    font-family: 'open_sans_light';
+    border: none;
+    background: rgba(#fff, 1);
+    color: $lw-blue;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 20px;
 
-  p {
-    margin: 0;
-    font-family: open_sans_bold;
+    &:hover {
+      opacity: .8;
+    }
   }
 }
 
