@@ -699,7 +699,8 @@ header .menu {
     cursor: pointer;
     text-transform: uppercase;
     text-decoration: none;
-    margin-top: 20px; }
+    margin-top: 20px;
+    cursor: pointer; }
     .startnow .openModal:hover {
       opacity: .8; }
 
@@ -806,7 +807,7 @@ header .menu {
     cursor: pointer; }
 
 .internal-modal-content h3 {
-  margin: 0; }
+  margin: 0 0 20px 0; }
 .internal-modal-content form input, .internal-modal-content form textarea {
   margin: .2em 0; }
 
