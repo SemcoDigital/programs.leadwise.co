@@ -2,8 +2,7 @@ header {
   @include clearfix;
 
   @include media($tablet) {
-    position: absolute;
-    width: 100%;
+    padding: 10px 0;
   }
 
   .logo {
@@ -13,6 +12,7 @@ header {
 
     @include media($tablet) {
       width: 120px;
+      margin: 0;
       height: auto;
       float: none;
     }
@@ -116,11 +116,12 @@ header {
 
   @include media($tablet) {
     display: table;
+    margin: 0;
     float: right;
   }
 
   .btn-menu {
     height: 3em;
-    margin: 2.5em 0;
+    margin: 5px 0 0 0;
   }
 }

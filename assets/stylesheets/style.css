@@ -111,8 +111,7 @@ header::after {
   display: block; }
 @media screen and (max-width: 768px) {
   header {
-    position: absolute;
-    width: 100%; } }
+    padding: 10px 0; } }
 header .logo {
   height: 6em;
   margin: 35px 0 0 0;
@@ -120,6 +119,7 @@ header .logo {
   @media screen and (max-width: 768px) {
     header .logo {
       width: 120px;
+      margin: 0;
       height: auto;
       float: none; } }
 header .menu {
@@ -189,10 +189,11 @@ header .menu {
   @media screen and (max-width: 768px) {
     .sidebartogle-button {
       display: table;
+      margin: 0;
       float: right; } }
   .sidebartogle-button .btn-menu {
     height: 3em;
-    margin: 2.5em 0; }
+    margin: 5px 0 0 0; }
 
 .programs .wrap-content,
 .program-description .wrap-content,
