@@ -87,23 +87,24 @@ title: LeadWise
     <h3>Explore our programs</h3>
 
     <ul class="programs-list">
+      {% for program in site.posts %}
       <li>
-        <img src="assets/images/program-thumb.jpg">
+        <img src="/assets/images/program-thumb.jpg">
         <div class="program-infos">
           <h4>
-            <a href="/program/building-trust">
-              Building Trust: a Semco Style Workshop
+            <a href="{{ program.url }}">
+              {{ program.title }}
             </a>
           </h4>
           <p>
-            Demonstration program showing how to implement Semco Style.
+            {{ program.short_description }}
           </p>
           <div class="program-nav">
             <div class="program-price">
-              USD 150 / participant
+              {{ program.price }} / participant
             </div>
             <div>
-              <a href="/program/building-trust" class="sample-but gray-but">
+              <a href="{{ program.url }}" class="sample-but gray-but">
                 Learn more
               </a>
             </div>
@@ -115,6 +116,7 @@ title: LeadWise
           <div><strong>10-20</strong> participants</div>
         </aside>
       </li>
+      {% endfor %}
     </ul>
 
   </div>
