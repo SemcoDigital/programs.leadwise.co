@@ -143,6 +143,25 @@
 }
 
 
+// Key Benefits
+
+.sample-list-entry {
+  width: 500px;
+  margin: auto;
+
+  > div {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px;
+
+    @include media($tablet) {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+}
+
+
 // How It Works
 
 .how-it-works {
@@ -150,7 +169,6 @@
   h3 {
     color: $lw-blue;
   }
-
 
   h4 {
     color: $lw-blue;

@@ -304,6 +304,18 @@ header .menu {
     .sample-list a:hover {
       color: #fff; }
 
+.sample-list-entry {
+  width: 500px;
+  margin: auto; }
+  .sample-list-entry > div {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px; }
+    @media screen and (max-width: 768px) {
+      .sample-list-entry > div {
+        width: 100%;
+        padding-right: 0; } }
+
 .how-it-works h3 {
   color: #30A7E9; }
 .how-it-works h4 {
