@@ -761,4 +761,53 @@ header .menu {
     font-size: 18px;
     float: left; }
 
+.modalDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #000;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  z-index: 99999; }
+
+.modalDialog > div {
+  background: #fff;
+  border-radius: 10px;
+  height: 86vh;
+  margin: 5% auto;
+  position: relative;
+  width: 60%; }
+  @media screen and (max-width: 768px) {
+    .modalDialog > div {
+      height: auto;
+      margin: auto;
+      width: 94%;
+      margin-top: 10px; } }
+
+.modal-body {
+  overflow-y: auto;
+  height: inherit;
+  padding: 30px; }
+
+.close {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  float: right;
+  line-height: 25px;
+  text-align: center;
+  text-decoration: none;
+  width: 24px; }
+  .close:hover {
+    cursor: pointer; }
+
+.internal-modal-content h3 {
+  margin: 0; }
+.internal-modal-content form input, .internal-modal-content form textarea {
+  margin: .2em 0; }
+
 /*# sourceMappingURL=style.css.map */
