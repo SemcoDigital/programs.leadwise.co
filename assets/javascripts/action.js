@@ -13,7 +13,6 @@ $(document).ready(function() {
       return false;
   });
 
-
   $(".openModal").click(function() {
     $('.modalDialog').show();
     $('#'+$(this).data('attr')).show();
@@ -24,5 +23,13 @@ $(document).ready(function() {
       $('.information').hide();
       $('.modalDialog').hide();
   });
+
+  //Partner Modal
+ $("#partner-form").submit(function() {
+   if ( $("#partner-form").parsley().isValid() ) {
+     $("#become-partner").hide();
+     $('.information').show();
+   }
+ });
 
 });

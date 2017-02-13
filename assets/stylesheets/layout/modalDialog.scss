@@ -1,0 +1,57 @@
+.modalDialog {
+  @include position(fixed, 0);
+  background: rgba(0,0,0,0.5);
+  color: #000;
+  // display: none;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+  z-index: 99999;
+}
+
+// #cookie, #privacy { display: none;}
+
+.modalDialog > div {
+  background: #fff;
+  border-radius: 10px;
+  height: 86vh;
+	margin: 5% auto;
+  position: relative;
+	width: 60%;
+
+  @include media($tablet) {
+    height: auto;
+    margin: auto;
+    width: 94%;
+    margin-top: 10px;
+  }
+}
+
+.modal-body {
+    overflow-y: auto;
+    height: inherit;
+    padding: 30px;
+}
+
+.close {
+  @include position(absolute, 1em 1em null null);
+  float: right;
+	line-height: 25px;
+  text-align: center;
+	text-decoration: none;
+  width: 24px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.internal-modal-content{
+  h3{
+    margin: 0;
+  }
+  form{
+    input, textarea{
+      margin: .2em 0;
+    }
+  }
+}

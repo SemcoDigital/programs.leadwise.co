@@ -674,10 +674,22 @@ header .menu {
     text-transform: uppercase; }
     .startnow input[type="submit"]:hover {
       opacity: .8; }
-
-.thankyou-message p {
-  margin: 0;
-  font-family: open_sans_bold; }
+  .startnow .openModal {
+    height: 44px;
+    padding: 0 15px;
+    line-height: 44px;
+    font-size: 16px;
+    font-family: 'open_sans_light';
+    border: none;
+    background: white;
+    color: #30A7E9;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 20px; }
+    .startnow .openModal:hover {
+      opacity: .8; }
 
 .org-designer-ad {
   color: #FFFFFF;
