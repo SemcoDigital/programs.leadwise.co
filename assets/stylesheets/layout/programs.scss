@@ -797,6 +797,12 @@
   padding: 25px 60px;
   display: inline-block;
 
+  @include media($tablet) {
+    display: block;
+    text-align: center !important;
+    padding: 30px 25px 25px 25px;
+  }
+
   a {
     width: 140px;
     float: left;
@@ -813,13 +819,22 @@
     letter-spacing: 0.1em;
 
     &:hover {
-      background: #fff;
-      color: $lw-blue;
+      background: $lw-blue;
+      color: #fff;
+    }
+
+    @include media($tablet) {
+      margin-bottom: 15px;
+      float: none;
     }
   }
 
   .but-entry {
     margin-left: 160px;
+
+    @include media($tablet) {
+      margin-left: 0;
+    }
   }
 
   strong {
