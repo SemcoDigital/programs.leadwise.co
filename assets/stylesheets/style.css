@@ -436,6 +436,12 @@ header .menu {
     .program-aside > div strong {
       font-family: 'open_sans_bold'; }
 
+.in-person {
+  font-family: open_sans_bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000 !important; }
+
 .program-page header .logo {
   width: 100px;
   margin-top: 0; }
