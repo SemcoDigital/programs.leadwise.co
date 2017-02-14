@@ -612,11 +612,12 @@ header .menu {
       .startnow .startnow-entry {
         width: 100%; } }
   .startnow .openModal {
-    height: 44px;
-    padding: 0 15px;
-    line-height: 44px;
-    font-size: 16px;
-    font-family: 'open_sans_light';
+    height: 50px;
+    padding: 0 20px;
+    line-height: 50px;
+    font-size: 1.4em;
+    font-family: 'ostrich_sansmedium';
+    letter-spacing: 0.1em;
     border: none;
     background: white;
     color: #30A7E9;
@@ -625,7 +626,11 @@ header .menu {
     text-transform: uppercase;
     text-decoration: none;
     margin-top: 20px;
-    cursor: pointer; }
+    cursor: pointer;
+    box-sizing: border-box; }
+    @media screen and (max-width: 768px) {
+      .startnow .openModal {
+        width: 100%; } }
     .startnow .openModal:hover {
       opacity: .8; }
 
