@@ -572,37 +572,6 @@ header .menu {
       font-size: 20px;
       color: #fff; }
 
-#pricing {
-  background: #30A7E9;
-  color: #fff; }
-  #pricing h3 {
-    color: #fff; }
-  #pricing span {
-    color: rgba(255, 255, 255, 0.7); }
-  #pricing h4 {
-    color: white; }
-  #pricing ul {
-    border-left: 3px solid rgba(255, 255, 255, 0.3); }
-  #pricing .wrap-content {
-    width: 550px; }
-    @media screen and (max-width: 768px) {
-      #pricing .wrap-content {
-        width: 100%; } }
-    #pricing .wrap-content div {
-      width: 100%; }
-
-.note-phrase {
-  text-transform: uppercase;
-  font-family: open_sans_bold;
-  font-size: 12px !important;
-  line-height: 20px !important;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 1em 2em;
-  text-align: center;
-  letter-spacing: 0;
-  margin: 0 !important; }
-
 .startnow {
   text-align: center;
   background: #30A7E9;
@@ -762,6 +731,37 @@ header .menu {
     margin: 11px 10px 0 0;
     font-size: 18px;
     float: left; }
+
+#pricing {
+  background: #30A7E9;
+  color: #fff; }
+  #pricing h3 {
+    color: #fff; }
+  #pricing span {
+    color: rgba(255, 255, 255, 0.7); }
+  #pricing h4 {
+    color: white; }
+  #pricing ul {
+    border-left: 3px solid rgba(255, 255, 255, 0.3); }
+  #pricing .wrap-content {
+    width: 550px; }
+    @media screen and (max-width: 768px) {
+      #pricing .wrap-content {
+        width: 100%; } }
+    #pricing .wrap-content div {
+      width: 100%; }
+
+.note-phrase {
+  text-transform: uppercase;
+  font-family: open_sans_bold;
+  font-size: 12px !important;
+  line-height: 20px !important;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1em 2em;
+  text-align: center;
+  letter-spacing: 0;
+  margin: 0 !important; }
 
 .modalDialog {
   position: fixed;
