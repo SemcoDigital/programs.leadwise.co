@@ -734,34 +734,38 @@ header .menu {
   letter-spacing: 0;
   margin: 0 !important; }
 
-.pricing-but a {
-  width: 140px;
-  float: left;
-  background: #ffcc00;
-  color: #000;
-  height: 50px;
-  line-height: 50px;
-  display: inline-block;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 1.4em;
-  font-family: 'ostrich_sansmedium';
-  letter-spacing: 0.1em; }
-  .pricing-but a:hover {
-    background: #fff;
+.pricing-but {
+  background: #fff;
+  padding: 25px 60px;
+  display: inline-block; }
+  .pricing-but a {
+    width: 140px;
+    float: left;
+    background: #ffcc00;
+    color: #000;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-family: 'ostrich_sansmedium';
+    letter-spacing: 0.1em; }
+    .pricing-but a:hover {
+      background: #fff;
+      color: #30A7E9; }
+  .pricing-but .but-entry {
+    margin-left: 160px; }
+  .pricing-but strong {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: open_sans_bold;
     color: #30A7E9; }
-.pricing-but .but-entry {
-  margin-left: 160px;
-  padding-top: 3px;
-  color: #fff; }
-.pricing-but strong {
-  text-transform: uppercase;
-  font-size: 16px;
-  font-family: open_sans_bold; }
-.pricing-but p {
-  font-size: 14px;
-  margin: 3px 0 0 0; }
+  .pricing-but p {
+    font-size: 14px;
+    margin: 3px 0 0 0;
+    color: #95989A; }
 
 .modalDialog {
   position: fixed;

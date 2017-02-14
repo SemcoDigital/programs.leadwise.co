@@ -793,6 +793,9 @@
 }
 
 .pricing-but {
+  background: #fff;
+  padding: 25px 60px;
+  display: inline-block;
 
   a {
     width: 140px;
@@ -817,18 +820,18 @@
 
   .but-entry {
     margin-left: 160px;
-    padding-top: 3px;
-    color: #fff;
   }
 
   strong {
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 20px;
     font-family: open_sans_bold;
+    color: $lw-blue;
   }
 
   p {
     font-size: 14px;
     margin: 3px 0 0 0;
+    color: $font-lw-light-bg;
   }
 }
