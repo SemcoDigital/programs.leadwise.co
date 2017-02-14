@@ -3,7 +3,8 @@
 .programs,
 .program-description,
 .why,
-.brochure {
+.brochure,
+#pricing {
 
   .wrap-content {
     width: 800px;
@@ -788,14 +789,39 @@
 // Pricing
 
 #pricing {
+  padding: 60px 0 1px 0;
   background: $lw-blue;
   color: #fff;
+  text-align: center;
+
+  @include media($tablet) {
+    padding: 40px 0 1px 0;
+  }
+
+  .wrap-content {
+
+    > div {
+      margin-bottom: 60px;
+      text-align: left;
+
+      @include media($tablet) {
+        margin-bottom: 40px;
+      }
+    }
+  }
 
   h3 {
+    margin: 0 0 40px 0;
     color: #fff;
   }
 
+  h4 {
+    margin: 5px 0 0 0;
+  }
+
   span {
+    text-transform: uppercase;
+    font-family: open_sans_bold;
     color: rgba(#fff, .7);
   }
 
@@ -807,16 +833,8 @@
     border-left: 3px solid rgba(#fff, .3);
   }
 
-  .wrap-content {
-    width: 550px;
-
-    @include media($tablet) {
-      width: 100%;
-    }
-
-    div {
-      width: 100%;
-    }
+  li {
+    line-height: 26px;
   }
 }
 

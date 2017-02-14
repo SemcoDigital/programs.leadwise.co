@@ -198,13 +198,15 @@ header .menu {
 .programs .wrap-content,
 .program-description .wrap-content,
 .why .wrap-content,
-.brochure .wrap-content {
+.brochure .wrap-content,
+#pricing .wrap-content {
   width: 800px; }
   @media screen and (max-width: 768px) {
     .programs .wrap-content,
     .program-description .wrap-content,
     .why .wrap-content,
-    .brochure .wrap-content {
+    .brochure .wrap-content,
+    #pricing .wrap-content {
       width: 100%; } }
 
 .main-banner {
@@ -733,23 +735,34 @@ header .menu {
     float: left; }
 
 #pricing {
+  padding: 60px 0 1px 0;
   background: #30A7E9;
-  color: #fff; }
+  color: #fff;
+  text-align: center; }
+  @media screen and (max-width: 768px) {
+    #pricing {
+      padding: 40px 0 1px 0; } }
+  #pricing .wrap-content > div {
+    margin-bottom: 60px;
+    text-align: left; }
+    @media screen and (max-width: 768px) {
+      #pricing .wrap-content > div {
+        margin-bottom: 40px; } }
   #pricing h3 {
+    margin: 0 0 40px 0;
     color: #fff; }
+  #pricing h4 {
+    margin: 5px 0 0 0; }
   #pricing span {
+    text-transform: uppercase;
+    font-family: open_sans_bold;
     color: rgba(255, 255, 255, 0.7); }
   #pricing h4 {
     color: white; }
   #pricing ul {
     border-left: 3px solid rgba(255, 255, 255, 0.3); }
-  #pricing .wrap-content {
-    width: 550px; }
-    @media screen and (max-width: 768px) {
-      #pricing .wrap-content {
-        width: 100%; } }
-    #pricing .wrap-content div {
-      width: 100%; }
+  #pricing li {
+    line-height: 26px; }
 
 .note-phrase {
   text-transform: uppercase;
