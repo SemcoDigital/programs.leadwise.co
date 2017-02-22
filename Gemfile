@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
-
-gem 'github-pages', group: :jekyll_plugins
+ruby '2.3.1'
 
 gem 'github-pages', group: :jekyll_plugins
 gem 'jekyll'
 gem 'rack-jekyll'
 gem 'rake'
+gem 'puma'
 
 group :development do
   gem 'foreman', '0.63.0'

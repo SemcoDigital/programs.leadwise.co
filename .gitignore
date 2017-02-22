@@ -3,3 +3,4 @@ _site/
 *.css.map
 .jekyll-metadata
 .DS_Store
+.env
