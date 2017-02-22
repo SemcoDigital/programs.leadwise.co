@@ -2,6 +2,7 @@
 layout: default
 signup_form_drip_id: 7866096
 permalink: "/semco-style/building-trust/pricing"
+checkout_stripe: true
 ---
 
 <div class="program-page">
@@ -17,7 +18,7 @@ permalink: "/semco-style/building-trust/pricing"
         <img class="btn-menu" src="/assets/images/icon-menu.svg" alt="menu">
       </label>
       <ul class="menu" id="main-menu">
-        <li><a class="scroll-link btn-cta" data-soffset="0" href="#">Buy Now</a></li>
+        <li><a class="scroll-link btn-cta" data-soffset="0" href="#checkout">Buy Now</a></li>
       </ul>
     </div>
   </header>
@@ -100,10 +101,10 @@ permalink: "/semco-style/building-trust/pricing"
         </ul>
       </div>
 
-      <div class="pricing-but">
-        <a href="#">Buy now</a>
+      <div class="pricing-but" id="checkout">
+        {% include checkout_form.html %}
         <div class="but-entry">
-          <strong>USD 100</strong><br>
+          <strong>USD 150</strong><br>
           <p>For this program implementation kit.</p>
         </div>
       </div>

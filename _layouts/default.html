@@ -2,11 +2,18 @@
 <html>
 
   <head>
+    <script>
+      if (location.protocol != 'https:' && location.hostname !== "localhost" && location.hostname !== "127.0.0.1")
+      {
+       location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+      }
+    </script>
+
     {% include meta_tags.html %}
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  	<link rel="stylesheet" href="http://www.leadwise.co/assets/stylesheets/leadwise.css">
+  	<link rel="stylesheet" href="//academy-staging.leadwise.co/assets/stylesheets/leadwise.css">
   	<link rel="stylesheet" href="/assets/stylesheets/style.css">
-  	<link rel="stylesheet" href="http://www.leadwise.co/assets/stylesheets/topbar.css">
+  	<link rel="stylesheet" href="//academy-staging.leadwise.co/assets/stylesheets/topbar.css">
   </head>
 
   <body>
@@ -18,8 +25,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="/assets/javascripts/action.js"></script>
-    <script src="http://www.leadwise.co/assets/javascripts/topbar.js"></script>
-    <script src="http://www.leadwise.co/assets/javascripts/footer.js"></script>
+    <script src="//academy-staging/assets/javascripts/topbar.js"></script>
+    <script src="//academy-staging/assets/javascripts/footer.js"></script>
+
+    {% if page.checkout_stripe %}
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+    <script src="/assets/javascripts/checkout.js"></script>
+    {% endif %}
 
     {% include tracking.html %}
 
