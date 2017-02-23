@@ -3,8 +3,8 @@
   <form action="https://www.getdrip.com/forms/{{ page.signup_form_drip_id | default: "35553483" }}/submissions" method="post" data-drip-embedded-form="{{ page.signup_form_drip_id | default: "35553483" }}" id="partner-form" class="signup_form" target="result">
     <input id="name" type="text" name="fields[name]" class="form-control input-lg" placeholder="Your full name" required data-parsley-whitespace="trim" data-parsley-errors-messages-disabled="true">
     <input id="company" type="text" name="fields[company]" class="form-control input-lg" placeholder="Your company name">
-    <input id="role" type="text" name="fields[role]" class="form-control input-lg" placeholder="Your role" required data-parsley-whitespace="trim" data-parsley-errors-messages-disabled="true">
-    <input id="email" type="text" name="fields[email]" class="form-control input-lg" placeholder="Your email address" required data-parsley-whitespace="trim" data-parsley-errors-messages-disabled="true">
+    <input id="role" type="text" name="fields[role]" class="form-control input-lg" placeholder="Your role">
+    <input id="email" type="email" name="fields[email]" class="form-control input-lg" placeholder="Your email address" required data-parsley-whitespace="trim" data-parsley-errors-messages-disabled="true">
     <textarea name="fields[message]" id="message" cols="30" rows="5" placeholder="Message"></textarea>
     <input type="submit" class="btn" value="Submit">
   </form>

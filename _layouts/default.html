@@ -24,6 +24,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxchimp/1.3.0/jquery.ajaxchimp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.6.2/parsley.min.js"></script>
+    <script src="/assets/javascripts/jquery.emailautocomplete-0.0.2.min.js"></script>
     <script src="/assets/javascripts/action.js"></script>
     <script src="//academy-staging/assets/javascripts/topbar.js"></script>
     <script src="//academy-staging/assets/javascripts/footer.js"></script>
@@ -31,6 +35,10 @@
     {% if page.checkout_stripe %}
     <script src="https://checkout.stripe.com/checkout.js"></script>
     <script src="/assets/javascripts/checkout.js"></script>
+    {% endif %}
+
+    {% if page.contact_form %}
+    <script src="/assets/javascripts/contact_form.js"></script>
     {% endif %}
 
     {% include tracking.html %}
