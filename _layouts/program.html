@@ -34,7 +34,7 @@ layout: default
             <p>{{ page.description }}</p>
             <div class="program-nav">
               <div class="program-price">
-                USD 150 / participant
+                {{ page.currency | upcase }} {{ page.price }} / participant
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 var handler = StripeCheckout.configure({
-  //key: 'pk_live_u5FP8bbINVDrD8WSWJiSiLEg',
-  key: 'pk_test_adnMLeo7qYydCnLtBuHytNsv',
+  key: 'pk_live_u5FP8bbINVDrD8WSWJiSiLEg',
+  //key: 'pk_test_adnMLeo7qYydCnLtBuHytNsv',
   image: 'https://acdm.leadwise.co/assets/images/logo-leadwise.jpg',
   locale: 'auto',
   billingAddress: true,
