@@ -1,0 +1,53 @@
+---
+layout: default
+title: Your payment is confirmed!
+purchase_conversion: true
+hide_menu: true
+---
+
+<div class="banner">
+  <h1>Hooray! You’re in!</h1>
+  <div class="banner-subtitle">
+    <h2>Your payment is confirmed.</h2>
+    <a class="scroll-link btn" data-soffset="0" href="/">return to homepage</a>
+  </div>
+</div>
+
+<section class="welcome-message">
+  <div class="wrap-content">
+    <p>You will receive 3 emails from us:</p>
+
+        <p><b>1. An e-mail from  Mariana (LeadWise) with a link to download the Change How Work Works Interactive e-book</b>
+        <br>If you don’t find our email confirmation in your inbox, try your SPAM folder or Promotion Tab.
+        Once you find it, move it to the inbox to ensure delivery of our future emails.
+        </p>
+
+        <p><b>2. Payment Receipt</b></p>
+
+        <p><b>3. LeadWise Slack Community invitation</b>
+        <br>Follow the instructions to create your account and join our community on Slack.
+        </p>
+
+        <p>In the meantime, make sure to join our Slack channel, introduce yourself, and start connecting with our community!</p>
+        <p>If you didn’t receive these emails, please let us know at <a href="mailto:mariana@leadwise.email" target="_blank" class="text-link">mariana@leadwise.email</a>.</p>
+  <br clear="all">
+</section>
+
+<script type="text/javascript">
+  var urlParams;
+  (window.onpopstate = function () {
+      var match,
+          pl     = /\+/g,  // Regex for replacing addition symbol with a space
+          search = /([^&=]+)=?([^&]*)/g,
+          decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+          query  = window.location.search.substring(1);
+
+      urlParams = {};
+      while (match = search.exec(query))
+         urlParams[decode(match[1])] = decode(match[2]);
+  })();
+  if(urlParams.value) {
+    window._dcq = window._dcq || [];
+    window._dcq.push(["track", "Bought LeadWise Programs", { value: urlParams.value }]);
+  }
+</script>
