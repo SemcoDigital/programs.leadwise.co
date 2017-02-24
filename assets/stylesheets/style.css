@@ -195,6 +195,10 @@ header .menu {
     height: 3em;
     margin: 5px 0 0 0; }
 
+.banner-subtitle {
+  background: #FFFFFF;
+  width: 90%; }
+
 .programs .wrap-content,
 .program-description .wrap-content,
 .why .wrap-content,
@@ -211,7 +215,7 @@ header .menu {
 
 .main-banner {
   text-align: center;
-  background: #fff url("../images/banner-bg.jpg") 0 -100px;
+  background: #fff url("../images/banner-bg-programs.jpg") 0 -100px;
   background-size: cover;
   display: table;
   width: 100%;
