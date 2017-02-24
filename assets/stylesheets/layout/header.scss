@@ -1,8 +1,9 @@
 header {
   @include clearfix;
+  margin-top: 30px;
 
   @include media($tablet) {
-    padding: 10px 0;
+    padding: 30px 0 10px 0;
   }
 
   .logo {
@@ -124,9 +125,4 @@ header {
     height: 3em;
     margin: 5px 0 0 0;
   }
-}
-
-.banner-subtitle{
-  background: $font-white;
-  width: 90%;
 }
