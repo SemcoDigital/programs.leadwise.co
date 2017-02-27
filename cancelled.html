@@ -3,31 +3,37 @@ layout: default
 title: Your payment was cancelled!
 checkout: true
 beautify_select: true
-hide_menu: true
-javascript: ["parsley-2.4.3.min.js", "checkout.js", "jquery.number.min.js", "jquery.maskmoney.min.js"]
+javascript: ["checkout", "cancelled"]
+checkout_stripe: true
 ---
 
-<div class="banner">
+<div class="banner banner-cancelled">
   <h1>Did you mean to cancel?</h1>
   <div class="banner-subtitle">
-    <h2>You have not completed your purchase of the Change How Work Works Interactive e-book</h2>
-    <!--<a class="scroll-link btn" data-soffset="0" href="/">Go back home</a>-->
-    <a class="scroll-link btn-cta" data-soffset="0" href="#pricing">Complete purchase</a>
+    <h2>You have not completed your purchase to the 'Building Trust: a Semco Style Workshop' implementation kit.</h2>
+    <p>If your payment was declined, please confirm that:</p>
+    <ul>
+      <li>Your name is listed exactly as it appears on your card, including middle names</li>
+      <li>Your address is correct</li>
+    </ul>
+    <div class="error-message"></div>
+    <a class="scroll-link btn-cta" data-soffset="0" href="#apply">Complete purchase</a>
+    <a class="scroll-link btn" data-soffset="0" href="http://programs.leadwise.co/">return to homepage</a>
   </div>
 </div>
 
-<section class="welcome-message">
+<!--Pricing / Apply-->
+<div class="pricing-but" id="apply">
+  {% include checkout_form.html %}
+  <div class="but-entry">
+    <strong>USD 100</strong><br>
+    <p>For this program implementation kit.</p>
+  </div>
+</div>
+
+<!--<section class="welcome-message">
   <div class="wrap-content">
-    <p>PayPal occasionally refuses payment for a variety of reasons, including when the payment credit card is declined or when your payment currency doesn't match your Paypal account currency. You may complete your purchase by:</p>
-    <div class="col-sm-7 col-md-10 col-md-offset-2 small-line-space text-justify">
-      <p>1. Trying again through this page. Confirm that your payment currency matches your Paypal account currency.</p>
-      <p>2. Logging into your PayPal account and sending the funds directly to <a href="mailto:corall@leadwise.email" target="_blank" class="text-link">corall@leadwise.email</a>.</p>
-      <p>3. If neither of these work, please email <a href="mailto:mariana@leadwise.email" target="_blank" class="text-link">mariana@leadwise.email</a>.</p>
-    </div>
     <p>To complete it, please fill out this form:</p>
   </div>
-  <!--pricing tabel-->
   {% include checkout_form.html %}
-  <!--pricing tabel end-->
-  <br clear="all">
-</section>
+</section>-->
