@@ -788,6 +788,20 @@ header {
     margin: 3px 0 0 0;
     color: #95989A; }
 
+.apply-cancelled {
+  text-align: center;
+  padding: 40px 0 50px 0; }
+  .apply-cancelled::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .apply-cancelled strong {
+    font-size: 40px;
+    font-family: open_sans_bold;
+    color: #30A7E9; }
+  .apply-cancelled p {
+    margin: 0 0 30px 0; }
+
 .modalDialog {
   position: fixed;
   top: 0;
