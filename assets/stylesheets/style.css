@@ -444,6 +444,22 @@ header {
   text-transform: uppercase;
   color: #000 !important; }
 
+.soon {
+  height: 20px;
+  line-height: 20px;
+  padding: 0 12px;
+  background: #ffcc00;
+  display: inline-block;
+  color: #000;
+  font-family: open_sans_bold;
+  font-size: 11px;
+  text-transform: uppercase; }
+  @media screen and (max-width: 768px) {
+    .soon {
+      position: absolute;
+      top: 4px;
+      right: 30px; } }
+
 .program-page header .logo {
   width: 100px;
   margin-top: 0; }
