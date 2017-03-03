@@ -837,6 +837,31 @@ header {
       margin-bottom: 40px;
       text-align: left; } }
 
+.cancelled-page-banner {
+  background: #fff url("../images/banner-bg.jpg") 0 -100px;
+  text-align: left;
+  padding-bottom: 80px; }
+  .cancelled-page-banner .wrap-content {
+    width: 600px; }
+    @media screen and (max-width: 768px) {
+      .cancelled-page-banner .wrap-content {
+        width: 100%; } }
+  @media screen and (max-width: 768px) {
+    .cancelled-page-banner h1 {
+      text-align: left !important;
+      margin-bottom: 25px; } }
+  .cancelled-page-banner h2 {
+    margin-bottom: 30px; }
+  .cancelled-page-banner .buts {
+    margin-top: 30px; }
+    .cancelled-page-banner .buts a {
+      margin: 0 5px 0 0; }
+      @media screen and (max-width: 768px) {
+        .cancelled-page-banner .buts a {
+          display: block;
+          margin-right: 0;
+          margin-bottom: 5px; } }
+
 .apply-cancelled {
   text-align: center;
   padding: 40px 0 50px 0; }

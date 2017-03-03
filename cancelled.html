@@ -7,22 +7,34 @@ javascript: ["checkout", "cancelled"]
 checkout_stripe: true
 ---
 
-<div class="banner banner-cancelled">
-  <h1>Did you mean to cancel?</h1>
-  <div class="banner-subtitle">
+<div class="banner cancelled-page-banner">
+  <div class="wrap-content">
+
+    <h1>Did you mean to cancel?</h1>
+
     <h2>You have not completed your purchase to the 'Building Trust: a Semco Style Workshop' implementation kit.</h2>
+
     <p>If your payment was declined, please confirm that:</p>
+
     <ul>
       <li>Your name is listed exactly as it appears on your card, including middle names</li>
       <li>Your address is correct</li>
     </ul>
+
     <div class="error-message"></div>
-    <a class="scroll-link btn-cta" data-soffset="0" href="#apply">Complete purchase</a>
-    <a class="scroll-link btn" data-soffset="0" href="http://programs.leadwise.co/">return to homepage</a>
+
+    <div class="buts">
+      <a class="btn-cta" data-soffset="0" href="#apply">
+        Complete purchase
+      </a>
+      <a class="btn" data-soffset="0" href="http://programs.leadwise.co/">
+        return to homepage
+      </a>
+    </div>
+
   </div>
 </div>
 
-<!--Pricing / Apply-->
 <div id="apply" class="apply-cancelled">
   <strong>USD 100</strong><br>
   <p>For this program implementation kit.</p>
