@@ -828,6 +828,15 @@ header {
     margin: 3px 0 0 0;
     color: #95989A; }
 
+.pricing-description {
+  margin-bottom: 50px;
+  font-size: 22px; }
+  @media screen and (max-width: 768px) {
+    .pricing-description {
+      font-size: 18px;
+      margin-bottom: 40px;
+      text-align: left; } }
+
 .apply-cancelled {
   text-align: center;
   padding: 40px 0 50px 0; }
