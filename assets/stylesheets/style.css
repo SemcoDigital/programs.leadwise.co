@@ -156,6 +156,30 @@ header {
         letter-spacing: 2px;
         padding: 0 25px; }
 
+.headervisible {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 400; }
+  .headervisible::after {
+    clear: both;
+    content: "";
+    display: block; }
+  @media screen and (max-width: 768px) {
+    .headervisible {
+      display: none; } }
+  .headervisible .logo {
+    width: 90px;
+    height: auto;
+    margin: 15px 0 0 0;
+    float: left; }
+  .headervisible .menu {
+    margin: 28px 0 0 0;
+    float: right; }
+
 #sidebartoggle {
   display: none; }
   #sidebartoggle:checked + header .menu {
@@ -171,7 +195,7 @@ header {
     right: 0;
     top: 0;
     width: 180px;
-    z-index: 2; }
+    z-index: 3000; }
     #sidebartoggle:checked + header .menu li {
       display: block;
       margin-bottom: 20px; }

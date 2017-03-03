@@ -63,6 +63,33 @@ header {
   }
 }
 
+.headervisible {
+  width: 100%;
+  background: rgba(#fff, .9);
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 400;
+  @include clearfix;
+
+  @include media($tablet) {
+    display: none;
+  }
+
+  .logo {
+    width: 90px;
+    height: auto;
+    margin: 15px 0 0 0;
+    float: left;
+  }
+
+  .menu {
+    margin: 28px 0 0 0;
+    float: right;
+  }
+}
+
 
 // Internal responsive
 
@@ -84,7 +111,7 @@ header {
       right: 0;
       top: 0;
       width: 180px;
-      z-index: 2;
+      z-index: 3000;
 
       li {
         display: block;

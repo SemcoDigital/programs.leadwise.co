@@ -32,4 +32,21 @@ $(document).ready(function() {
    }
  });
 
+  //tiny header
+  var indexheader = $('.index-header');
+  var scrolled = false;
+
+  $(window).scroll(function () {
+
+    if (200 < $(window).scrollTop() && !scrolled) {
+      indexheader.addClass('headervisible').animate({ top: '0px' });
+      scrolled = true;
+    }
+
+   if (200 > $(window).scrollTop() && scrolled) {
+      indexheader.removeClass('headervisible').css('top', '-30px');
+      scrolled = false;
+    }
+  });
+
 });
