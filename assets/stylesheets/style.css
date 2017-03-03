@@ -225,14 +225,16 @@ header {
 .program-description .wrap-content,
 .why .wrap-content,
 .brochure .wrap-content,
-#pricing .wrap-content {
+#pricing .wrap-content,
+.welcome-message .wrap-content {
   width: 800px; }
   @media screen and (max-width: 768px) {
     .programs .wrap-content,
     .program-description .wrap-content,
     .why .wrap-content,
     .brochure .wrap-content,
-    #pricing .wrap-content {
+    #pricing .wrap-content,
+    .welcome-message .wrap-content {
       width: 100%; } }
 
 .main-banner {
@@ -869,6 +871,12 @@ header {
     @media screen and (max-width: 768px) {
       .princing-but-cancelled .wrap-content {
         width: 100%; } }
+
+.welcome-message {
+  padding: 60px 0; }
+
+.confirmed-banner .btn {
+  margin-top: 30px; }
 
 .modalDialog {
   position: fixed;

@@ -4,7 +4,8 @@
 .program-description,
 .why,
 .brochure,
-#pricing {
+#pricing,
+.welcome-message {
 
   .wrap-content {
     width: 800px;
@@ -890,7 +891,7 @@
 }
 
 
-// Cancelled
+// Cancelled and Confirmed
 
 .cancelled-page-banner {
   background: #fff url("../images/banner-bg.jpg") 0 -100px;
@@ -942,5 +943,16 @@
     @include media($tablet) {
       width: 100%;
     }
+  }
+}
+
+.welcome-message {
+  padding: 60px 0;
+}
+
+.confirmed-banner {
+
+  .btn {
+    margin-top: 30px;
   }
 }
