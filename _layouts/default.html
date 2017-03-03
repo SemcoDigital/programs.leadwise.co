@@ -11,15 +11,16 @@
 
     {% include meta_tags.html %}
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  	<link rel="stylesheet" href="https://academy.leadwise.co/assets/stylesheets/leadwise.css">
+  	<link rel="stylesheet" href="https://www.leadwise.co/assets/stylesheets/leadwise.css">
   	<link rel="stylesheet" href="/assets/stylesheets/style.css">
-  	<link rel="stylesheet" href="https://academy.leadwise.co/assets/stylesheets/topbar.css">
+  	<link rel="stylesheet" href="https://www.leadwise.co/assets/stylesheets/topbar.css">
   </head>
 
   <body>
     {{ content }}
 
-    {% include footer.html %}
+    <!--Footer-->
+    <div id="footer"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
@@ -27,9 +28,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxchimp/1.3.0/jquery.ajaxchimp.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.6.2/parsley.min.js"></script>
     <script src="/assets/javascripts/jquery.emailautocomplete-0.0.2.min.js"></script>
-    <script src="https://academy.leadwise.co/assets/javascripts/action.js"></script>
-    <script src="https://academy.leadwise.co/assets/javascripts/topbar.js"></script>
-    <script src="https://academy.leadwise.co/assets/javascripts/footer.js"></script>
+    <script src="https://www.leadwise.co/assets/javascripts/action.js"></script>
+    <script src="https://www.leadwise.co/assets/javascripts/topbar.js"></script>
+    <script src="https://www.leadwise.co/assets/javascripts/footer.js"></script>
 
     {% if page.checkout_stripe %}
     <script src="https://checkout.stripe.com/checkout.js"></script>
