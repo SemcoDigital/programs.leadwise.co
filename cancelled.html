@@ -35,15 +35,15 @@ checkout_stripe: true
   </div>
 </div>
 
-<div id="apply" class="apply-cancelled">
-  <strong>USD 100</strong><br>
-  <p>For this program implementation kit.</p>
-  {% include checkout_form.html %}
-</div>
-
-<!--<section class="welcome-message">
+<div class="pricing-but princing-but-cancelled" id="checkout">
   <div class="wrap-content">
-    <p>To complete it, please fill out this form:</p>
+
+    {% include checkout_form.html %}
+
+    <div class="but-entry">
+      <strong>USD 100</strong><br>
+      <p>For this program implementation kit.</p>
+    </div>
+
   </div>
-  {% include checkout_form.html %}
-</section>-->
+</div>
