@@ -256,7 +256,8 @@ header {
       .main-banner .wrap-content {
         margin: 0 5%; } }
   .main-banner h1 {
-    margin: 65px 0 25px 0; }
+    margin: 65px 0 25px 0;
+    line-height: 60px; }
     @media screen and (max-width: 768px) {
       .main-banner h1 {
         font-size: 40px;

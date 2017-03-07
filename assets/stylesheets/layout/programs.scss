@@ -44,6 +44,7 @@
 
   h1 {
     margin: 65px 0 25px 0;
+    line-height: 60px;
 
     @include media($tablet) {
       font-size: 40px;
