@@ -37,6 +37,9 @@
   }
   .wrap-content{
     margin: 0 15%;
+    @include media($tablet) {
+      margin: 0 5%;
+    }
   }
 
   h1 {

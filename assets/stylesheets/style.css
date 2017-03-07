@@ -252,6 +252,9 @@ header {
         display: none; } }
   .main-banner .wrap-content {
     margin: 0 15%; }
+    @media screen and (max-width: 768px) {
+      .main-banner .wrap-content {
+        margin: 0 5%; } }
   .main-banner h1 {
     margin: 65px 0 25px 0; }
     @media screen and (max-width: 768px) {
