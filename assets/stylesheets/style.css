@@ -363,15 +363,14 @@ header {
 
 .programs {
   text-align: center;
-  padding: 60px 0;
+  padding: 40px 0 60px 0;
   background: #EAEAEA; }
   .programs h3 {
     color: #30A7E9;
     margin: 20px 0 0 0; }
     @media screen and (max-width: 768px) {
       .programs h3 {
-        font-size: 34px;
-        text-align: left;
+        font-size: 26px;
         margin: 0; } }
 
 .programs-list {
@@ -449,6 +448,11 @@ header {
     line-height: 40px;
     margin-right: 20px;
     color: #000; }
+    @media screen and (max-width: 768px) {
+      .programs-list .program-nav .program-price {
+        width: 100%;
+        font-size: 14px;
+        margin-right: 0; } }
 
 .program-aside {
   width: 150px;
@@ -479,18 +483,13 @@ header {
 .soon {
   height: 20px;
   line-height: 20px;
-  padding: 0 12px;
+  padding: 0 5px;
   background: #ffcc00;
   display: inline-block;
   color: #000;
   font-family: open_sans_bold;
   font-size: 11px;
   text-transform: uppercase; }
-  @media screen and (max-width: 768px) {
-    .soon {
-      position: absolute;
-      top: 4px;
-      right: 30px; } }
 
 .program-page header .logo {
   width: 100px;
