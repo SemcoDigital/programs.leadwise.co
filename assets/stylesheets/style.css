@@ -180,6 +180,26 @@ header {
     margin: 28px 0 0 0;
     float: right; }
 
+@media screen and (max-width: 768px) {
+  display: none; }
+.sidebar_close {
+  cursor: pointer;
+  line-height: 40px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  color: #fff;
+  background: #ccc;
+  display: inline-block;
+  font-size: 18px;
+  font-family: open_sans_bold;
+  display: none; }
+  .sidebar_close:hover {
+    background: #666; }
+  @media screen and (max-width: 768px) {
+    .sidebar_close {
+      display: inline-block; } }
+
 #sidebartoggle {
   display: none; }
   #sidebartoggle:checked + header .menu {

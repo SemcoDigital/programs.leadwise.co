@@ -93,6 +93,32 @@ header {
 
 // Internal responsive
 
+@include media($tablet) {
+  display: none;
+}
+
+.sidebar_close {
+  cursor: pointer;
+  line-height: 40px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  color: #fff;
+  background: #ccc;
+  display: inline-block;
+  font-size: 18px;
+  font-family: open_sans_bold;
+  display: none;
+
+  &:hover {
+    background: #666;
+  }
+
+  @include media($tablet) {
+    display: inline-block;
+  }
+}
+
 #sidebartoggle {
   display: none;
 
