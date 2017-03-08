@@ -108,14 +108,14 @@ header {
   display: inline-block;
   font-size: 18px;
   font-family: open_sans_bold;
-  display: none;
+  display: none !important;
 
   &:hover {
     background: #666;
   }
 
   @include media($tablet) {
-    display: inline-block;
+    display: inline-block !important;
   }
 }
 
