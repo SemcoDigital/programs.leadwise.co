@@ -55,4 +55,10 @@ $(document).ready(function() {
     return false;
   });
 
+  $(document).on('click', function(e){
+    if (e.target.id != 'main-menu' && e.target.id != 'sidebartoggle'){
+      $('#sidebartoggle').removeAttr('checked');
+    }
+  });
+
 });
