@@ -34,7 +34,8 @@ $(document).ready(function() {
 
   //close mobile header
   $(".sidebar_close").click(function() {
-    $("#sidebartoggle").hide();
+    //$("#sidebartoggle").hide();
+    $('#sidebartoggle').removeAttr('checked');
     return false;
   });
 
