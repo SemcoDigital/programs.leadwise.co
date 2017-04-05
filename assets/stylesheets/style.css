@@ -670,6 +670,9 @@ header {
     text-align: left;
     padding: 0;
     line-height: 26px; }
+    @media screen and (max-width: 768px) {
+      .startnow .startnow-entry {
+        width: 100%; } }
     .startnow .startnow-entry p {
       margin: 0;
       font-family: open_sans_bold; }
@@ -678,9 +681,10 @@ header {
       margin: 0 0 20px 20px; }
     .startnow .startnow-entry li {
       margin-top: 10px; }
-    @media screen and (max-width: 768px) {
-      .startnow .startnow-entry {
-        width: 100%; } }
+    .startnow .startnow-entry a {
+      font-family: open_sans_bold;
+      color: #fff;
+      text-decoration: underline; }
   .startnow .openModal {
     height: 50px;
     padding: 0 20px;
