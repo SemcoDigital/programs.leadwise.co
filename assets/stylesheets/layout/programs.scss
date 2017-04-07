@@ -35,10 +35,12 @@
       display: none;
     }
   }
-  .wrap-content{
+
+  .wrap-content {
     margin: 0 15%;
+
     @include media($tablet) {
-      margin: 0 5%;
+      margin: 0;
     }
   }
 
@@ -737,14 +739,11 @@
   display: inline-block;
   font-family: 'open_sans_bold';
   text-align: left !important;
-  margin-right: 4px;
-  margin-top: 15px;
 
   @include media($mobile) {
     width: 100%;
     display: block;
     box-sizing: border-box;
-    margin-top: 7px;
   }
 
   &:hover {

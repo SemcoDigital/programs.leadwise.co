@@ -1,6 +1,5 @@
 header {
   @include clearfix;
-  margin-top: 30px;
 
   @include media($tablet) {
     padding: 30px 0 10px 0;
@@ -26,6 +25,10 @@ header {
     padding: 0;
 
     @include media($tablet) {
+      background: #f2f2f2;
+      padding: 15px;
+      float: none;
+      margin: 20px 0 0 0;
       display: none;
     }
 
@@ -36,11 +39,22 @@ header {
 
       @include media($tablet) {
         margin-left: 0;
+        display: block;
+        margin-bottom: 2px;
       }
 
       a {
         color: $font-default;
         text-decoration: none;
+
+        @include media($tablet) {
+          display: block;
+          height: 36px;
+          line-height: 36px;
+          background: $lw-dark-bg;
+          padding: 0 10px;
+          color: #fff;
+        }
 
         &:hover {
           opacity: .8;
@@ -58,10 +72,18 @@ header {
         display: inline-block;
         letter-spacing: 2px;
         padding: 0 25px;
+
+        @include media($tablet) {
+          display: block;
+          margin-top: 13px;
+        }
       }
     }
   }
 }
+
+
+// Compact
 
 .headervisible {
   width: 100%;
@@ -91,79 +113,7 @@ header {
 }
 
 
-// Internal responsive
-
-@include media($tablet) {
-  display: none;
-}
-
-.sidebar_close {
-  cursor: pointer;
-  line-height: 40px;
-  height: 40px;
-  width: 40px;
-  text-align: center;
-  color: #fff;
-  background: #ccc;
-  display: inline-block;
-  font-size: 18px;
-  font-family: open_sans_bold;
-  display: none !important;
-
-  &:hover {
-    background: #666;
-  }
-
-  @include media($tablet) {
-    display: inline-block !important;
-  }
-}
-
-#sidebartoggle {
-  display: none;
-
-  &:checked + header{
-
-    .menu{
-      -webkit-box-shadow: -2px 0px 15px 0px rgba(0,0,0,0.75);
-      -moz-box-shadow: -2px 0px 15px 0px rgba(0,0,0,0.75);
-      box-shadow: -2px 0px 15px 0px rgba(0,0,0,0.75);
-      display: block;
-      background: $font-white;
-      height: 100vh;
-      margin: 0;
-      padding: 1em;
-      position: fixed;
-      right: 0;
-      top: 0;
-      width: 180px;
-      z-index: 3000;
-
-      li {
-        display: block;
-        margin-bottom: 20px;
-      }
-
-      .btn-cta {
-        color: $font-white;
-        text-align: center;
-
-        &:hover {
-          color: $font-white;
-        }
-      }
-
-      a {
-        color: $font-default;
-        display: block;
-
-        &:hover {
-          color: $lw-blue;
-        }
-      }
-    }
-  }
-}
+// Mobile
 
 .sidebartogle-button {
   display: none;
