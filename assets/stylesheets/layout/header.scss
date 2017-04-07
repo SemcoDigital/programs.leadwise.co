@@ -94,6 +94,7 @@ header {
   left: 0;
   z-index: 400;
   @include clearfix;
+  margin-top: 30px;
 
   @include media($tablet) {
     display: none;
