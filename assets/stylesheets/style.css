@@ -427,20 +427,22 @@ header .menu {
     @media screen and (max-width: 768px) {
       .programs-list p {
         margin-bottom: 15px; } }
-  .programs-list .program-nav > div {
-    display: inline-block;
-    margin-right: 5px; }
-  .programs-list .program-nav .program-price {
-    font-family: 'open_sans_bold';
-    font-size: 16px;
-    line-height: 40px;
-    margin-right: 20px;
-    color: #000; }
-    @media screen and (max-width: 768px) {
-      .programs-list .program-nav .program-price {
-        width: 100%;
-        font-size: 14px;
-        margin-right: 0; } }
+  .programs-list .program-nav {
+    margin-top: 10px; }
+    .programs-list .program-nav > div {
+      display: inline-block;
+      margin-right: 5px; }
+    .programs-list .program-nav .program-price {
+      font-family: 'open_sans_bold';
+      font-size: 16px;
+      line-height: 40px;
+      margin-right: 20px;
+      color: #000; }
+      @media screen and (max-width: 768px) {
+        .programs-list .program-nav .program-price {
+          width: 100%;
+          font-size: 14px;
+          margin-right: 0; } }
 
 .program-aside {
   width: 170px;
