@@ -580,11 +580,13 @@
 
   img {
     width: 320px;
+    margin-top: 100px;
     float: left;
 
     @include media($tablet) {
       width: 280px;
       margin-bottom: 40px;
+      margin-top: 0;
       float: none;
     }
   }
