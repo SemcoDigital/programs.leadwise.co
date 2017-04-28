@@ -88,7 +88,7 @@ title: Programs LeadWise
     <ul class="programs-list">
       {% for program in site.posts %}
       <li>
-        <img src="/assets/images/programs/01.jpg">
+        <img src="/assets/images/programs/{{ program.cover }}">
         <div class="program-infos">
           <h4>
             <a href="{{ program.url }}">
@@ -96,7 +96,7 @@ title: Programs LeadWise
             </a>
           </h4>
           <p>
-            Build the right foundation for a better way of working with this one-day workshop that will revitalize the trust-building process in your organization.
+            {{ program.description }}
           </p>
           <div class="program-nav">
             <div class="program-price">
@@ -193,23 +193,6 @@ title: Programs LeadWise
         <aside class="program-aside">
           <div class="in-person">In-person</div>
           <div>One-day workshop</div>
-          <div><strong>10-20</strong> participants</div>
-        </aside>
-      </li>
-      <li>
-        <img src="/assets/images/programs/06.jpg">
-        <div class="program-infos">
-          <h4>AppRaise: Implementing Peer-set Salaries</h4>
-          <p>Increase employee satisfaction and pay fairness by empowering peers to evaluate each other and set salaries.</p>
-          <div class="program-nav">
-            <div class="soon" style="margin-top: 13px;">
-              coming soon
-            </div>
-          </div>
-        </div>
-        <aside class="program-aside">
-          <div class="in-person">Software combined with in-person workshops</div>
-          <div>Customized<br> implementation timeframe</div>
           <div><strong>10-20</strong> participants</div>
         </aside>
       </li>
