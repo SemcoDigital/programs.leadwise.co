@@ -378,11 +378,15 @@
 
     .logo {
       width: 100px;
-      margin-top: 22px;
+      margin-top: 32px;
     }
 
     .menu {
       margin: 54px 0 0 0;
+
+      @include media($tablet) {
+        margin: 14px 0 0 0;
+      }
     }
   }
 

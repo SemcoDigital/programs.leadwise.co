@@ -482,9 +482,12 @@ header .menu {
 
 .program-page header .logo {
   width: 100px;
-  margin-top: 22px; }
+  margin-top: 32px; }
 .program-page header .menu {
   margin: 54px 0 0 0; }
+  @media screen and (max-width: 768px) {
+    .program-page header .menu {
+      margin: 14px 0 0 0; } }
 @media screen and (max-width: 768px) {
   .program-page .btn-menu {
     margin-top: 25px; } }
