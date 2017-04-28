@@ -377,11 +377,11 @@
 
     .logo {
       width: 100px;
-      margin-top: 0;
+      margin-top: 30px;
     }
 
     .menu {
-      margin: 23px 0 0 0;
+      margin: 54px 0 0 0;
     }
   }
 
@@ -512,6 +512,61 @@
 
   img {
     width: 460px;
+    float: left;
+
+    @include media($tablet) {
+      width: 280px;
+      margin-bottom: 40px;
+      float: none;
+    }
+  }
+
+  .about-entry {
+    margin-left: 480px;
+    text-align: left;
+    padding-top: 40px;
+
+    @include media($tablet) {
+      margin-left: 0;
+      padding-top: 0;
+    }
+
+    p {
+      line-height: 26px;
+    }
+  }
+}
+
+
+// About HELABS
+
+.about-helabs {
+  padding: 60px 0;
+  text-align: center;
+
+  @include media($tablet) {
+    padding: 40px 0;
+  }
+
+  .wrap-content {
+    width: 900px;
+
+    @include media($tablet) {
+      width: 100%;
+    }
+  }
+
+  h3 {
+    color: $lw-blue;
+    margin: 0 0 30px 0;
+
+    @include media($tablet) {
+      font-size: 26px;
+    }
+  }
+
+  img {
+    width: 320px;
     float: left;
 
     @include media($tablet) {

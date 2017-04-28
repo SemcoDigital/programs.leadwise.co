@@ -1,0 +1,180 @@
+---
+layout: default
+---
+
+<div class="program-page">
+
+  <!-- Header -->
+  <header>
+    <div class="wrap-content">
+      <a href="/">
+        <img src="/assets/images/logo-leadwise-programs.svg" alt="LeadWise Programs" class="logo">
+      </a>
+      <label for="sidebartoggle" class="sidebartogle-button">
+        <img class="btn-menu" src="/assets/images/icon-menu.svg" alt="menu">
+      </label>
+      <ul class="menu" id="main-menu">
+        <li><a class="scroll-link btn-cta" data-soffset="0" href="#apply">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Programs list -->
+  <section class="programs">
+    <div class="wrap-content">
+      <ul class="programs-list">
+        <li>
+          <img src="/assets/images/programs/{{ page.cover }}">
+          <div class="program-infos">
+            <h4>{{ page.title }}</h4>
+            <p>{{ page.description }}</p>
+            <div class="program-nav">
+              <div class="program-price">
+                {{ page.currency | upcase }} {{ page.price }} / participant
+              </div>
+            </div>
+          </div>
+          <aside class="program-aside">
+            <div class="in-person">Software as<br> a service</div>
+            <div>Customized<br> implementation<br> timeframe</div>
+          </aside>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Why -->
+  <section class="why" id="why">
+    <div class="wrap-content">
+
+      <h3>WHY IS SETTING FAIR SALARIES SO IMPORTANT?</h3>
+
+      <p class="why-description">
+        AppRaise allows team members to rate their peers with a single, simple value appraisal and uses an elegant algorithm to produce the fairest possible salaries.
+      </p>
+
+      <ul>
+        <li>
+          <i class="fa fa-circle-o" aria-hidden="true"></i>
+          <div>
+            <h4>IT’S NEVER BEEN HARDER TO ASSESS INDIVIDUAL CONTRIBUTION</h4>
+            <p>
+              How much is each team member’s contribution worth in a diverse, multidisciplinary, collaborating team?
+            </p>
+            <p>
+              The team knows. Use the team’s collective wisdom to guide your salary setting decisions.
+            </p>
+          </div>
+        </li>
+        <li>
+          <i class="fa fa-circle-o" aria-hidden="true"></i>
+          <div>
+            <h4>SIMPLE AND STRAIGHTFORWARD</h4>
+            <p>
+              Forget constant salary negotiations.
+            </p>
+            <p>
+              Forget complicated rating tables and formulas.
+            </p>
+            <p>
+              Forget stressful discussions to set peoples salaries.
+            </p>
+            <p>
+              Empower team members to rate each other with a single straightforward value appraisal using drag-and-drop.
+            </p>
+          </div>
+        </li>
+        <li>
+          <i class="fa fa-circle-o" aria-hidden="true"></i>
+          <div>
+            <h4>"IS MY COMPANY READY FOR THIS?"</h4>
+            <p>
+              Managers can use AppRaises salary results simply as information to guide the salary setting decisions they are already making today.
+            </p>
+            <p>
+              Autonomous teams can use the results to share company profits directly.
+            </p>
+            <p>
+              Teams can start out using AppRaise with anonymous appraisals and gradually evolve to a fully transparent process.
+            </p>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- Key benefits -->
+  <section class="sample-list" id="keybenefits">
+    <div class="wrap-content">
+      <h3>A STEP-BY-STEP GUIDE FOR YOU TO:</h3>
+      <div class="sample-list-entry">
+        <div>
+          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+          <p>
+            Establish trust as the foundation for setting fair compensation.
+          </p>
+        </div>
+        <div>
+          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+          <p style="padding-top: 10px;">
+            Tap into your teams collective wisdom.
+          </p>
+        </div>
+        <div>
+          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+          <p style="padding-top: 10px;">
+            Set salaries that are not only fair but perceived as being fair.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--About SEMCO Style-->
+  <section class="about-helabs">
+    <div class="wrap-content">
+      <img src="/assets/images/helabs.png">
+      <div class="about-entry">
+        <h3>About HE:labs</h3>
+        <p>
+          HE:labs is a digital products company with over 400 successful web and mobile projects delivered in several countries.
+        </p>
+        <p>
+          We have developed AppRaise over the years to use peer-set salaries for our entire team, from the CEO to 40+ creative workers.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!--Apply now-->
+  <section class="startnow" id="apply">
+    <div class="wrap-content">
+      <h3>CONTACT</h3>
+      <a class="openModal">
+        CONTACT US FOR NEXT STEPS
+      </a>
+    </div>
+  </section>
+
+  <div id="openModal" class="modalDialog" style="display: none;">
+    <div>
+      <a title="" class="close">
+        <img src="/assets/images/icons/menu-close.svg" alt="Close">
+      </a>
+      <div class="modal-body">
+        <div id="become-partner">
+          {% include startnow.html %}
+        </div>
+        <div class="information" style="display: none;">
+          <h3>Thank you!</h3>
+          <p>As soon as we receive your information, we'll send you an email to schedule a call. </p>
+          <p>If you don’t find our email confirmation in your inbox, try your SPAM folder or Promotion Tab.</p>
+          <p>Once you find it, move it to the inbox to ensure delivery of our future emails. </p>
+          <p>See you soon!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -481,9 +481,9 @@ header .menu {
 
 .program-page header .logo {
   width: 100px;
-  margin-top: 0; }
+  margin-top: 30px; }
 .program-page header .menu {
-  margin: 23px 0 0 0; }
+  margin: 54px 0 0 0; }
 .program-page .programs {
   padding: 30px 0; }
 .program-page .programs-list {
@@ -577,6 +577,42 @@ header .menu {
         margin-left: 0;
         padding-top: 0; } }
     .about-semcostyle .about-entry p {
+      line-height: 26px; }
+
+.about-helabs {
+  padding: 60px 0;
+  text-align: center; }
+  @media screen and (max-width: 768px) {
+    .about-helabs {
+      padding: 40px 0; } }
+  .about-helabs .wrap-content {
+    width: 900px; }
+    @media screen and (max-width: 768px) {
+      .about-helabs .wrap-content {
+        width: 100%; } }
+  .about-helabs h3 {
+    color: #30A7E9;
+    margin: 0 0 30px 0; }
+    @media screen and (max-width: 768px) {
+      .about-helabs h3 {
+        font-size: 26px; } }
+  .about-helabs img {
+    width: 320px;
+    float: left; }
+    @media screen and (max-width: 768px) {
+      .about-helabs img {
+        width: 280px;
+        margin-bottom: 40px;
+        float: none; } }
+  .about-helabs .about-entry {
+    margin-left: 480px;
+    text-align: left;
+    padding-top: 40px; }
+    @media screen and (max-width: 768px) {
+      .about-helabs .about-entry {
+        margin-left: 0;
+        padding-top: 0; } }
+    .about-helabs .about-entry p {
       line-height: 26px; }
 
 .brochure {
