@@ -399,7 +399,7 @@ header .menu {
       margin-top: 0; } }
   .programs-list .program-infos {
     margin-left: 230px;
-    margin-right: 165px;
+    margin-right: 170px;
     border-right: 1px solid #EAEAEA;
     padding: 10px 20px 0 0; }
     @media screen and (max-width: 768px) {
@@ -443,7 +443,8 @@ header .menu {
         margin-right: 0; } }
 
 .program-aside {
-  width: 150px;
+  width: 170px;
+  padding-left: 10px;
   position: absolute;
   right: 0;
   top: 15px; }
