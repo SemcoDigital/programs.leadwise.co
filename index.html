@@ -100,7 +100,7 @@ title: Programs LeadWise
           </p>
           <div class="program-nav">
             <div class="program-price">
-              {{ program.currency | upcase }} {{ program.price }} / participant
+              {{ program.currency | upcase }} {{ program.price }} / {{ program.signature_type | default: "participant" }}
             </div>
             <div>
               <a href="{{ program.url }}" class="sample-but gray-but" target="_blank">
